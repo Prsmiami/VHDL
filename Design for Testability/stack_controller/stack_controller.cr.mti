@@ -1,0 +1,18 @@
+C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/stack_controller/stack_controller_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/stack_controller/stack_controller_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity stack_controller_tb
+-- Compiling architecture stack_controller_arch of stack_controller_tb
+
+} {} {}} C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/stack_controller/Stack_Controller.vhd {1 {vcom -work work -2002 -explicit C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/stack_controller/Stack_Controller.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Stack_Controller
+-- Compiling architecture behav of Stack_Controller
+
+} {} {}}

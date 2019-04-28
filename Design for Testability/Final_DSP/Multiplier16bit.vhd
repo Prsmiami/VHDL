@@ -1,0 +1,2 @@
+library ieee;use ieee.std_logic_1164.all;use ieee.std_logic_unsigned.all;entity Multiplier16bit is	port(X,Y : in std_logic_vector(15 downto 0);		P : out std_logic_vector(31 downto 0));	end Multiplier16bit;
+architecture behav of Multiplier16bit is 	begin	P <= X*Y;end behav;

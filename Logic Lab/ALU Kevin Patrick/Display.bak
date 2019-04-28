@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+Entity Display is
+  port(A: in std_logic_vector(3 downto 0);
+       S: out std_logic_vector(6 downto 0));
+End Display;
+
+Architecture behave of Display is
+  signal B : std_logic_vector (6 downto 0);
+  begin
+    process(A)
+      begin
+        if ( A = "0000") then B <= "0111111";
+        elsif ( A = "0001") then B <= "0000110";
+        elsif ( A = "0010") then B <= "1011011";
+        elsif ( A = "0011") then B <= "1001111";
+        elsif ( A = "0100") then B <= "1100110";
+        elsif ( A = "0101") then B <= "1101101";
+        elsif ( A = "0110") then B <= "1111101";
+        elsif ( A = "0111") then B <= "0000111";
+        elsif ( A = "1000") then B <= "1111111";
+        elsif ( A = "1001") then B <= "1101111";
+        elsif ( A = "1010") then B <= "1110111";
+        elsif ( A = "1011") then B <= "1111100";
+        elsif ( A = "1100") then B <= "0111001";
+        elsif ( A = "1101") then B <= "1011110";
+        elsif ( A = "1110") then B <= "1111001";
+        elsif ( A = "1111") then B <= "1110001";

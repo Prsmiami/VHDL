@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\count_stack
+Epc_stack
+Z0 w1524789160
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\pc_stack
+Z4 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/pc_stack/PC_Stack.vhd
+Z5 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/pc_stack/PC_Stack.vhd
+l0
+L4
+VOQj@06IWAl0Wa6CK;N7GF1
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1524789639.174000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/pc_stack/PC_Stack.vhd|
+Z9 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/pc_stack/PC_Stack.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 5>T2jlYz7ThGR4c;S45ES3
+!i10b 1
+Abehav
+R1
+R2
+DEx4 work 8 pc_stack 0 22 OQj@06IWAl0Wa6CK;N7GF1
+l23
+L15
+VgGM0caJLMEPJQVlYnMmbM1
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 PRBWNS1c:U;WCB52RCeHd3
+!i10b 1
+Epc_stack_tb
+Z12 w1524790323
+Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+R3
+Z14 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/pc_stack/pc_stack_tb.vhd
+Z15 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/pc_stack/pc_stack_tb.vhd
+l0
+L5
+Vj=YfNMfWN7:TCz4Nm8ULT0
+!s100 9J4_kacn98jedg@`AXfW80
+R6
+32
+!i10b 1
+Z16 !s108 1524790328.835000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/pc_stack/pc_stack_tb.vhd|
+Z18 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/pc_stack/pc_stack_tb.vhd|
+R10
+R11
+Apc_stack_arch
+R13
+R1
+R2
+Z19 DEx4 work 11 pc_stack_tb 0 22 j=YfNMfWN7:TCz4Nm8ULT0
+l31
+L8
+VO[CLlb15ZX0>hX596cZ1B0
+!s100 <MPB>ML@JH=@^iQXS8@Z[1
+R6
+32
+!i10b 1
+R16
+R17
+R18
+R10
+R11

@@ -1,0 +1,390 @@
+MAC Multiplier
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity Multiplier16bit is
+	port(X,Y : in std_logic_vector(15 downto 0);
+		P : out std_logic_vector(31 downto 0));
+	end Multiplier16bit;
+    
+architecture behav of Multiplier16bit is 
+	begin
+	P <= X*Y;
+end behav;
+
+MAC Adder
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+
+entity AddSubtract16bit is
+    port(MR : in std_logic_vector(39 downto 0);
+        P : in std_logic_vector(31 downto 0);
+        AMF : in std_logic_vector(4 downto 0);
+        R2 : out std_logic_vector(7 downto 0);
+        R1,R0 : out std_logic_vector(15 downto 0);
+        MV : out std_logic);
+    end AddSubtract16bit;
+    
+ architecture behav of AddSubtract16bit is 
+     begin
+         process(AMF,P,MR)
+             
+         variable result: std_logic_vector(40 downto 0);
+         variable temp_mr, temp_p: std_logic_vector(40 downto 0);
+         variable Smr,Sp,Sr : std_logic;
+         
+         begin
+            temp_mr :='0' & MR; 
+            temp_p := "000000000" & P; -- P = X*Y from the Multiplier
+            case AMF is
+             when "00000" =>
+                 result:= "00000000000000000000000000000000000000000";
+             when "00001" =>
+                 result:= temp_p;
+             when "00010" =>
+                 result := temp_mr + temp_p; -- MR + X*Y
+             when "01100" =>
+                 result := temp_mr - temp_p; -- MR - X*Y
+             when others =>
+             result := "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
+             end case;
+         
+         Smr := temp_mr(39);
+         Sp := temp_p(31);
+         Sr := result(39);
+                  
+          -- Indicates if there is an overflow during addition    
+         if AMF = "00010" then
+         MV <= (Smr and Sp and (not Sr)) or ((not Smr) and (not Sp) and Sr);
+         end if;
+         
+         -- Indicates if there is an overflow during subtraction
+        if AMF = "01100" then
+        MV <=(Smr and (not Sp) and (not Sr)) or ((not Smr) and Sp and Sr);
+        end if; 
+        
+        R2 <= result(39 downto 32);
+        R1 <= result(31 downto 16);
+        R0 <= result(15 downto 0);
+        
+    end process;
+     
+ end behav;
+
+Register 16 bit
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity Register16 is
+  Port(Inp : in std_logic_vector(15 downto 0);
+    Load, Clk : in bit;
+    Outp : out std_logic_vector(15 downto 0));
+  end Register16;
+
+Architecture behav of Register16 is
+  Signal storage : std_logic_vector(15 downto 0);
+  begin
+    process(Inp, Load, Clk)
+    begin
+    if (Clk'event and Clk = '1' and Load = '1') then
+      storage <= Inp;
+    elsif (Clk'event and Clk = '0') then
+      Outp <= storage;
+    else
+      null;
+    end if;
+  end process;
+end behav;
+
+
+
+Register 8 bit:
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity Register8 is
+  Port(Inp : in std_logic_vector(7 downto 0);
+    Load, Clk : in bit;
+    Outp : out std_logic_vector(7 downto 0));
+  end Register8;
+
+Architecture behav of Register8 is
+  Signal storage : std_logic_vector(7 downto 0);
+  begin
+    process(Inp, Load, Clk)
+    begin
+    if (Clk'event and Clk = '1' and Load = '1') then
+      storage <= Inp;
+    elsif (Clk'event and Clk = '0') then
+      Outp <= storage;
+    else
+      null;
+    end if;
+  end process;
+end behav;
+
+
+
+Tri-State Buffer:
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity TriStateBuffer16 is
+  Port(Data : in std_logic_vector(15 downto 0);
+       En : in bit;
+       Outp : out std_logic_vector(15 downto 0));
+end;
+
+Architecture behav of TriStateBuffer16 is
+  begin
+    process(Data, En)
+      begin
+      if (En = '1') then
+        Outp <= Data;
+      else
+        Outp <= "ZZZZZZZZZZZZZZZZ";
+      end if;
+    end process;
+end behav;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity TriStateBuffer8 is
+  Port(Data : in std_logic_vector(7 downto 0);
+       En : in bit;
+       Outp : out std_logic_vector(7 downto 0));
+end;
+
+Architecture behav of TriStateBuffer8 is
+  begin
+    process(Data, En)
+      begin
+      if (En = '1') then
+        Outp <= Data;
+      else
+        Outp <= "ZZZZZZZZ";
+      end if;
+    end process;
+end behav;
+
+
+
+
+Multiplexer:
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Multiplexer16 is
+  port(Inp1, Inp2 : in std_logic_vector(15 downto 0);
+        Sel : in bit;
+        Outp : out std_logic_vector(15 downto 0));
+  end Multiplexer16;
+  
+  
+architecture behav of Multiplexer16 is
+  begin
+    process(Inp1, Inp2, Sel)
+      begin
+       if (Sel = '0') then
+         Outp <= Inp1;
+       elsif (Sel = '1') then
+         Outp <= Inp2;
+       else
+         null;
+       end if;
+ end process;
+end behav;
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Multiplexer8 is
+  port(Inp1, Inp2 : in std_logic_vector(7 downto 0);
+        Sel : in bit;
+        Outp : out std_logic_vector(7 downto 0));
+  end Multiplexer8;
+  
+  
+architecture behav of Multiplexer8 is
+  begin
+    process(Inp1, Inp2, Sel)
+      begin
+       if (Sel = '0') then
+         Outp <= Inp1;
+       elsif (Sel = '1') then
+         Outp <= Inp2;
+       else
+         null;
+       end if;
+ end process;
+end behav;
+
+
+
+
+
+Multiplexer4to1:
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Multiplexer4to1 is
+  port(Inp1: in std_logic_vector(7 downto 0);
+	Inp2, Inp3, Inp4 : in std_logic_vector(15 downto 0);
+        Sel : in std_logic_vector(1 downto 0);
+        Outp : out std_logic_vector(15 downto 0));
+  end Multiplexer4to1;
+  
+  
+architecture behav of Multiplexer4to1 is
+  begin
+    process(Inp1, Inp2, Inp3, Inp4, Sel)
+      begin
+       if (Sel = '00') then
+         Outp <= Inp1;
+       elsif (Sel = '01') then
+         Outp <= Inp2;
+	elsif (Sel = '10') then
+         Outp <= Inp3;
+	elsif (Sel = '11') then
+         Outp <= Inp4;
+       else
+         null;
+       end if;
+ end process;
+end behav;
+
+
+
+
+MAC Complete:
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+
+Entity MACcomplete is
+	Port ( DMD, R: inout std_logic_vector( 15 downto 0);
+		PMD: in std_logic_vector(23 downto 0);
+		Load: in bit_vector(5 downto 0);
+		Sel: in bit_vector(7 downto 0);
+    		En: in bit_vector(3 downto 0);
+    		AMF: in std_logic_vector(4 downto 0);
+		MV : out std_logic);
+	end MACcomplete;
+
+Architecture arch of MACcomplete is
+
+Component TriStateBuffer16 is
+	Port(Data : in std_logic_vector(15 downto 0);
+      		En : in bit;
+      		Outp : out std_logic_vector(15 downto 0));
+  	end Component TriStateBuffer16;
+
+Component TriStateBuffer8 is
+	Port(Data : in std_logic_vector(7 downto 0);
+      		En : in bit;
+      		Outp : out std_logic_vector(7 downto 0));
+  	end Component TriStateBuffer8;
+
+Component Register16 is
+    	Port(Inp : in std_logic_vector(15 downto 0);
+      		Load, Clk : in bit;
+     		Outp : out std_logic_vector(15 downto 0)); 
+  	end Component Register16;
+
+Component Register8 is
+    	Port(Inp : in std_logic_vector(7 downto 0);
+      		Load, Clk : in bit;
+     		Outp : out std_logic_vector(7 downto 0)); 
+  	end Component Register8;
+
+Component Multiplexer16 is
+    	port(Inp1, Inp2 : in std_logic_vector(15 downto 0);
+      		Sel : in bit;
+      		Outp : out std_logic_vector(15 downto 0));    
+  	end Component Multiplexer16;
+
+Component Multiplexer8 is
+    	port(Inp1, Inp2 : in std_logic_vector(7 downto 0);
+      		Sel : in bit;
+      		Outp : out std_logic_vector(7 downto 0));    
+  	end Component Multiplexer8;
+
+Component Multiplexer4to1 is
+  	port(Inp1: in std_logic_vector(7 downto 0);
+		Inp2, Inp3, Inp4 : in std_logic_vector(15 downto 0);
+        	Sel : in std_logic_vector(1 downto 0);
+        	Outp : out std_logic_vector(15 downto 0));
+  	end Component Multiplexer4to1;
+
+Component Multiplier16bit is
+	port(X,Y : in std_logic_vector(15 downto 0);
+		P : out std_logic_vector(31 downto 0));
+	end Component Multiplier16bit;
+
+Component AddSubtract16bit is
+   	 port(MR : in std_logic_vector(39 downto 0);
+        		P : in std_logic_vector(31 downto 0);
+        		AMF : in std_logic_vector(4 downto 0);
+        		R2 : out std_logic_vector(7 downto 0);
+        		R1,R0 : out std_logic_vector(15 downto 0);
+        		MV : out std_logic);
+    	end Component AddSubtract16bit;
+
+signal sx1, sx2, sx3, sx4, sx5: std_logic_vector(15 downto 0);
+signal sy1, sy2, sy3, sy4, sy5, sy6: std_logic_vector(15 downto 0);
+signal sf2, sf5: std_logic_vector(7 downto 0);
+singal sf1, sf3, sf4, sf6, sf7, sf8 sR: std_logic_vector(15 downto 0);
+signal SR_out : std_logic_vector(39 downto 0);
+
+
+begin
+	Mx0: Register16 port map(DMD, Load(0), CLK, sx1);
+	Mx1: register16 port map(DMD, Load(1), CLK, sx2);
+	Mxmux0: Multiplexer16 port map(sx1,sx2,Sel(0),sx3);
+	Mxmux1: Multiplexer16 port map(sx1,sx2,Sel(1),sx4);
+	Mulxmux: Multiplexer16 port map(sx4,R,Sel(3),sx5);
+	T0: TriStateBuffer16 port map(sx3,En(0),DMD);
+
+	Mymuxin: Multiplexer16 port map(PMD(23 downto 8),DMD,Sel(2),sy1);
+	My0: Register16 port map(sy1,Load(2),CLK,sy2);
+	My1: Register16 port map(sy1,Load(3),CLK,sy3);
+	Mymux0: Multiplexer16 port map(sy2,sy3,Sel(4),sy4);
+	Mymux1: Multiplexer16 port map(sy2,sy3,Sel(5),sy5);
+	Mulymux: Multiplexer16 port map(sy4,sf1,Sel(6),sy6);
+	T1: TriStateBuffer16 port map(sy5,En(1),DMD);
+
+	Multiplier: Multiplier16bit port map(sx5, sy6, sP);
+	AddSubtract: AddSubtract16bit port map(SR_out, sP, AMF, sR2, sR1, sR0, MV) 
+
+	MFregister: Register16 port map(sR1,Load(4),CLK,sf1);
+	Rmux2: Multiplexer8 port map(sR2,DMD(7 downto 0),Sel(7),sf2);
+	Rmux1: Multiplexer16 port map(sR1,DMD,Sel(8),sf3);
+	Rmux0: Multiplexer16 port map(sR0,DMD,Sel(9),sf4);
+	MRregister2: Register8 port map(sf2,Load(5),CLK,sf5);
+	MRregister2: Register16 port map(sf3,Load(6),CLK,sf6);
+	MRregister2: Register16 port map(sf4,Load(7),CLK,sf7);
+	MRmux: Multiplexer4to1 port map(sf5, sf6, sf7, sf7, Sel(10), sf8);
+
+	T2: TriStateBuffer16 port map(sf8,En(2),DMD);
+	T3: TriStateBuffer8 port map(sf5,En(3),R);
+	T4: TriStateBuffer16 port map(sf6,En(4),R);
+	T5: TriStateBuffer16 port map(sf7,En(5),R);
+
+	SR_out <= sR2 & sR1 & sR0;
+
+end;
+

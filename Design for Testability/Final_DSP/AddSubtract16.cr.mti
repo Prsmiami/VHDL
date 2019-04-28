@@ -1,0 +1,11 @@
+{C:/Users/May Zar Lin/Desktop/VHDL/AddSubtract16.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/AddSubtract16.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity AddSubtract16
+-- Compiling architecture behav of AddSubtract16
+
+} {} {}}

@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+dC:\Program Files\altera\13.0sp1
+Eprogram_counter
+Z0 w1398438616
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\program_counter
+Z4 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/program_counter/program_counter.vhd
+Z5 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/program_counter/program_counter.vhd
+l0
+L5
+Vj7gV3LR2H?b7ERaYDzUz32
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1524798705.883000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/program_counter/program_counter.vhd|
+Z9 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/program_counter/program_counter.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 >_dR9VI^kLo9[Wk^@LeAV3
+!i10b 1
+Abehav
+R1
+R2
+DEx4 work 15 program_counter 0 22 j7gV3LR2H?b7ERaYDzUz32
+l16
+L14
+V1XXNf2`LiSh9hal]ibS681
+!s100 BF;Q:Z9f_e`AFzU_gTJ4:1
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!i10b 1
+Eprogram_counter_tb
+Z12 w1524798701
+Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+R3
+Z14 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/program_counter/program_counter_tb.vhd
+Z15 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/program_counter/program_counter_tb.vhd
+l0
+L5
+VSP1S5e1?a3a3[`FhLiZ^H1
+!s100 eTF8KF1<HfLBS^ET]j>iW1
+R6
+32
+!i10b 1
+Z16 !s108 1524798706.014000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/program_counter/program_counter_tb.vhd|
+Z18 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/program_counter/program_counter_tb.vhd|
+R10
+R11
+Aprogram_counter_arch
+R13
+R1
+R2
+Z19 DEx4 work 18 program_counter_tb 0 22 SP1S5e1?a3a3[`FhLiZ^H1
+l23
+L8
+V>@1^d_jO?c7@L1Gi?6TBW2
+!s100 ==^T@J7TlPn4b=JJ?8AN?3
+R6
+32
+!i10b 1
+R16
+R17
+R18
+R10
+R11

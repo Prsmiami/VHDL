@@ -1,0 +1,36 @@
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+	Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+	Info: Processing started: Mon Nov 06 21:17:51 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file tristate16bit.vhd
+	Info (12022): Found design unit 1: TriState4Bit-behav
+	Info (12023): Found entity 1: TriState4Bit
+Info (12021): Found 2 design units, including 1 entities, in source file alukernal.vhd
+	Info (12022): Found design unit 1: ALUKernel-arch
+	Info (12023): Found entity 1: ALUKernel
+Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
+	Info (12022): Found design unit 1: ALU-arch
+	Info (12023): Found entity 1: ALU
+Info (12021): Found 2 design units, including 1 entities, in source file 16-bit register.vhd
+	Info (12022): Found design unit 1: Register16Bit-behavior
+	Info (12023): Found entity 1: Register16Bit
+Info (12021): Found 2 design units, including 1 entities, in source file 2to1mux16bit.vhd.vhd
+	Info (12022): Found design unit 1: MUX21_16bit-behavior
+	Info (12023): Found entity 1: MUX21_16bit
+Info (12021): Found 2 design units, including 1 entities, in source file sevensegmentdisplay.vhd
+	Info (12022): Found design unit 1: Display_Ckt-behav_display
+	Info (12023): Found entity 1: Display_Ckt
+Info (12021): Found 2 design units, including 1 entities, in source file placesplitter.vhd
+	Info (12022): Found design unit 1: placesplitter-behav
+	Info (12023): Found entity 1: placesplitter
+Info (12021): Found 1 design units, including 1 entities, in source file block1.bdf
+	Info (12023): Found entity 1: Block1
+Error (12007): Top-level design entity "Sevensegmentdisplay" is undefined
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 0 warnings
+	Error: Peak virtual memory: 485 megabytes
+	Error: Processing ended: Mon Nov 06 21:17:53 2017
+	Error: Elapsed time: 00:00:02
+	Error: Total CPU time (on all processors): 00:00:01
+Error (293001): Quartus II Full Compilation was unsuccessful. 3 errors, 0 warnings

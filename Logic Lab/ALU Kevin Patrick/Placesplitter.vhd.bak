@@ -1,0 +1,15 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+entity placesplitter is
+Port(
+Input: in std_logic_vector(7 downto 0); --input fromcalc
+Out1 : out std_logic_vector(3 downto 0); --4 bit output
+Out2 : out std_logic_vector(2 downto 0); --3 bit most significant output 
+Sign : out std_logic);
+end entity placesplitter;
+
+Architecture behav of sevensegmentdisplay is
+begin
+
+end;

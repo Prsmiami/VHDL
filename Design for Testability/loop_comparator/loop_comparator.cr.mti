@@ -1,0 +1,18 @@
+C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_comparator/loop_comparator_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_comparator/loop_comparator_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity loop_comparator_tb
+-- Compiling architecture loop_comparator_arch of loop_comparator_tb
+
+} {} {}} C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_comparator/loop_comparator.vhd {1 {vcom -work work -2002 -explicit C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_comparator/loop_comparator.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity loop_comparator
+-- Compiling architecture behav of loop_comparator
+
+} {} {}}

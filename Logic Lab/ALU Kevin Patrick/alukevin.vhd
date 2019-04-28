@@ -1,0 +1,77 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+Entity ALUFinal is
+  Port( CLK: in std_logic;
+	Load: in std_logic_vector(5 downto 0);
+	Sel: in std_logic_vector(7 downto 0);
+	DMD, R: inout std_logic_vector(15 downto 0);
+				
+        PMD: in std_logic_vector(23 downto 0);
+        AMF: in std_logic_vector(4 downto 0);
+	CI: in std_logic;
+  	En: in std_logic_vector(3 downto 0);
+   	AZ, AN, AC, AV, AS: out std_logic;
+	alu_out: inout std_logic_vector(15 downto 0)
+);
+end ALUfinal;
+
+Architecture arch of ALUfinal is
+  Component TriState4Bit is
+    Port(data : in std_logic_vector(15 downto 0);
+      en : in std_logic;
+      output : out std_logic_vector(15 downto 0));
+  end Component TriState4Bit;
+  Component Register16Bit is
+    Port(data : in std_logic_vector(15 downto 0);
+      Load, Clk : in std_logic;
+      Q : out std_logic_vector(15 downto 0)); 
+  end Component Register16Bit;
+  Component MUX21_16bit is
+    port(inp1, inp2 : in std_logic_vector(15 downto 0);
+      SEL : in std_logic;
+      Outp : out std_logic_vector(15 downto 0));    
+  end Component MUX21_16bit;
+  Component ALU_component is
+    Port(X,Y : in std_logic_vector(15 downto 0);
+      CI : in std_logic;
+      AMF : in std_logic_vector(4 downto 0);
+      CLK: in std_logic;
+      R: out std_logic_vector(15 downto 0);
+      AZ, AN, AC, AV, AS: out std_logic);
+  end Component ALU_component;
+  
+  signal S1, S2, S3, S4, X: std_logic_vector(15 downto 0);
+  signal S5, S6, S7, S8, S9, S10, Y: std_logic_vector(15 downto 0);
+  signal retrn, S11: std_logic_vector(15 downto 0);
+  signal S12, S13, S14: std_logic_vector(15 downto 0);
+  
+begin
+-- X signal
+  AX0: Register16Bit port map (DMD, Load(0), clk, S1);
+  AX1: Register16Bit port map (DMD, Load(1), clk, S2);
+  MUX1: MUX21_16bit port map (S1, S2, Sel(1), S3);
+  MUX2: MUX21_16bit port map (R, S3, Sel(2), S4);
+  tsbuffx: TriState4Bit port map (S3, en(0), DMD);
+  
+-- Y signal 
+  MUX0: MUX21_16bit port map (DMD, PMD(15 downto 0), Sel(0), S5);
+  AY0: Register16Bit port map (S5, Load(2), clk, S6);
+  AY1: Register16Bit port map (S5, Load(3), clk, S7);
+  MUX3: MUX21_16bit port map (S6, S7, Sel(3), S8);
+  MUX4: MUX21_16bit port map (S8, S9, Sel(4), S10);
+  tsbuffy: TriState4Bit port map (S8, en(1), DMD);
+
+--  ALU
+  ALU: ALU_component port map(S4, S10, CI, AMF, CLK, S12, AZ, AN, AC, AV, AS);
+  AF: Register16Bit port map(S12, Load(4), clk, S9);
+  AR: Register16Bit port map(S13, Load(5), clk, S14);
+  
+-- Output
+  mux5: MUX21_16bit port map (S12, DMD, Sel(5), S13);
+  outBuff0: TriState4Bit port map(S14, en(3), R);
+  outBuff1: TriState4Bit port map(S14, en(2), DMD);
+  
+end architecture;

@@ -1,0 +1,36 @@
+Next Address Selector Do Script:
+
+# vsim work.next_address_selector 
+# Loading C:\altera\80\modelsim_ae\win32aloem/../std.standard
+# Loading C:\altera\80\modelsim_ae\win32aloem/../ieee.std_logic_1164(body)
+# Loading C:\altera\80\modelsim_ae\win32aloem/../ieee.std_logic_arith(body)
+# Loading C:\altera\80\modelsim_ae\win32aloem/../ieee.std_logic_unsigned(body)
+# Loading work.next_address_selector(behav)
+add wave sim:/next_address_selector/*
+force -freeze sim:/next_address_selector/rs 1 0
+run
+force -freeze sim:/next_address_selector/rs 0 0
+force -freeze sim:/next_address_selector/cond 1 0
+force -freeze sim:/next_address_selector/inst 00011UUUUUUUUUUUUUUUUUUU 0
+run
+force -freeze sim:/next_address_selector/cond 0 0
+run
+force -freeze sim:/next_address_selector/cond 1 0
+force -freeze sim:/next_address_selector/inst 0000101000000000000UUUUU 0
+run
+force -freeze sim:/next_address_selector/cond 0 0
+run
+force -freeze sim:/next_address_selector/inst 00000011UUUUUUUUUUUUUUUU 0
+force -freeze sim:/next_address_selector/lastinst 1 0
+force -freeze sim:/next_address_selector/cond 1 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ps  Iteration: 0  Instance: /next_address_selector
+force -freeze sim:/next_address_selector/cond 0 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 600 ps  Iteration: 0  Instance: /next_address_selector
+force -freeze sim:/next_address_selector/lastinst 0 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 700 ps  Iteration: 0  Instance: /next_address_selector

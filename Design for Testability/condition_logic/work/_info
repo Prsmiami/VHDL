@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\pc_stack
+Econdition_logic
+Z0 w1397230918
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\condition_logic
+Z4 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/condition_logic/Condition_Logic.vhd
+Z5 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/condition_logic/Condition_Logic.vhd
+l0
+L4
+VmA19[AakAJded:3:;h=5J3
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1524792030.504000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/condition_logic/Condition_Logic.vhd|
+Z9 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/condition_logic/Condition_Logic.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 CXPKk@Mmg9U0g50KkJSgI0
+!i10b 1
+Abehav
+R1
+R2
+DEx4 work 15 condition_logic 0 22 mA19[AakAJded:3:;h=5J3
+l16
+L15
+V9nW1Y:277dJfa8Q`UQ?8X1
+!s100 ^IT0o>b>I@2do;XoXcO?31
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!i10b 1
+Econdition_logic_tb
+Z12 w1524791967
+Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+R3
+Z14 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/condition_logic/condition_logic_tb.vhd
+Z15 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/condition_logic/condition_logic_tb.vhd
+l0
+L5
+VB5T4o<1odRlk1aMZlkR4@3
+!s100 Dkd[[BgaQ7L=V1VoQzYVW0
+R6
+32
+!i10b 1
+Z16 !s108 1524792030.612000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/condition_logic/condition_logic_tb.vhd|
+Z18 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/condition_logic/condition_logic_tb.vhd|
+R10
+R11
+Acondition_logic_arch
+R13
+R1
+R2
+Z19 DEx4 work 18 condition_logic_tb 0 22 B5T4o<1odRlk1aMZlkR4@3
+l27
+L8
+Z20 V1lXZlRl[EY_iz1R8mh[OR2
+Z21 !s100 hJ8YG31_3:IXVz4T8`hUj1
+R6
+32
+!i10b 1
+R16
+R17
+R18
+R10
+R11

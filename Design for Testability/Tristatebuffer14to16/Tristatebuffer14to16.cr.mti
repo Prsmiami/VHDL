@@ -1,0 +1,18 @@
+C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/Tristatebuffer14to16/Tristatebuffer14to16_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/Tristatebuffer14to16/Tristatebuffer14to16_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tristatebuffer14to16_tb
+-- Compiling architecture tristatebuffer14to16_arch of tristatebuffer14to16_tb
+
+} {} {}} C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/Tristatebuffer14to16/Tristatebuffer14to16.vhd {1 {vcom -work work -2002 -explicit C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/Tristatebuffer14to16/Tristatebuffer14to16.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Tristatebuffer14to16
+-- Compiling architecture behav of Tristatebuffer14to16
+
+} {} {}}

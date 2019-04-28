@@ -1,0 +1,18 @@
+add wave sim:/processing_unit/*
+force -freeze sim:/processing_unit/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/processing_unit/rs 1 0
+force -freeze sim:/processing_unit/s_program_seq 00 0
+force -freeze sim:/processing_unit/load_program_seq 100 0
+force -freeze sim:/processing_unit/bc_program_seq 111 0
+force -freeze sim:/processing_unit/s_alu 00000000 0
+force -freeze sim:/processing_unit/s_mac 00000000000 0
+force -freeze sim:/processing_unit/s2_mac 11 0
+force -freeze sim:/processing_unit/s_shifter 0000 0
+force -freeze sim:/processing_unit/load_program_seq 100 0
+force -freeze sim:/processing_unit/load_alu 000000 0
+force -freeze sim:/processing_unit/load_mac 00000000 0
+force -freeze sim:/processing_unit/load_shifter 000 0
+force -freeze sim:/processing_unit/bc_program_seq 111 0
+force -freeze sim:/processing_unit/bc_alu 0000 0
+force -freeze sim:/processing_unit/bc_mac 000000 0
+force -freeze sim:/processing_unit/bc_shifter 0000 0

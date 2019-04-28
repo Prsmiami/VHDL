@@ -1,0 +1,18 @@
+C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/program_counter/program_counter_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/program_counter/program_counter_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity program_counter_tb
+-- Compiling architecture program_counter_arch of program_counter_tb
+
+} {} {}} C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/program_counter/program_counter.vhd {1 {vcom -work work -2002 -explicit C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/program_counter/program_counter.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity program_counter
+-- Compiling architecture behav of program_counter
+
+} {} {}}

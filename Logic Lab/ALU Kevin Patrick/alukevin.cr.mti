@@ -1,0 +1,101 @@
+C:/altera/13.0sp1/ALUTopLvl.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/ALUTopLvl.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ALU
+-- Compiling architecture arch of ALU
+
+} {} {}} {C:/Users/ece316group7.DIGITALLAB.001/Desktop/ALU Kevin Patrick/2_1_8bitMUX.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/ece316group7.DIGITALLAB.001/Desktop/ALU Kevin Patrick/2_1_8bitMUX.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2_1_8bit
+-- Compiling architecture behav of mux2_1_8bit
+
+} {} {}} {C:/Users/ece316group7.DIGITALLAB.001/Desktop/ALU Kevin Patrick/2to1MUX16bit.vhd.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/ece316group7.DIGITALLAB.001/Desktop/ALU Kevin Patrick/2to1MUX16bit.vhd.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX21_16bit
+-- Compiling architecture behavior of MUX21_16bit
+
+} {} {}} {C:/Users/ece316group7.DIGITALLAB.001/Desktop/ALU Kevin Patrick/TriState16Bit.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/ece316group7.DIGITALLAB.001/Desktop/ALU Kevin Patrick/TriState16Bit.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TriState4Bit
+-- Compiling architecture behav of TriState4Bit
+
+} {} {}} C:/altera/13.0sp1/alukevin.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/alukevin.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ALU
+-- Compiling architecture arch of ALU
+
+} {} {}} C:/altera/13.0sp1/2to1MUX.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/2to1MUX.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX21_16bit
+-- Compiling architecture behavior of MUX21_16bit
+
+} {} {}} C:/altera/13.0sp1/alu_comp.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/alu_comp.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU_component
+-- Compiling architecture behavior of ALU_component
+
+} {} {}} {C:/altera/13.0sp1/16-Bit Register.vhd} {1 {vcom -work work -2002 -explicit {C:/altera/13.0sp1/16-Bit Register.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Register16Bit
+-- Compiling architecture behavior of Register16Bit
+
+} {} {}} C:/altera/13.0sp1/ALU_Component.vhd {1 {vcom -work work -2002 -explicit C:/altera/13.0sp1/ALU_Component.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU_component
+-- Compiling architecture behavior of ALU_component
+
+} {} {}} {C:/Users/ece316group7.DIGITALLAB.001/Desktop/ALU Kevin Patrick/16-Bit Register.vhd} {1 {vcom -work work -2002 -explicit {C:/Users/ece316group7.DIGITALLAB.001/Desktop/ALU Kevin Patrick/16-Bit Register.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Register16Bit
+-- Compiling architecture behavior of Register16Bit
+
+} {} {}} C:/altera/13.0sp1/TriState16Bit.vhd {2 {vcom -work work -2002 -explicit C:/altera/13.0sp1/TriState16Bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TriState16Bit
+-- Compiling architecture behav of TriState16Bit
+** Warning: [14] C:/altera/13.0sp1/TriState16Bit.vhd(15): (vcom-1272) Length of expected is 16; length of actual is 4.
+
+
+} {} {}}

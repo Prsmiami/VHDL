@@ -1,0 +1,10 @@
+force -freeze sim:/programsequencer/clk 1 0, 0 {50 ns} -r 100
+force -freeze sim:/programsequencer/load 100 0
+force -freeze sim:/programsequencer/load 000 0
+force -freeze sim:/programsequencer/tsb_ctr 010 0
+force -freeze sim:/programsequencer/en 1 0
+force -freeze sim:/programsequencer/reset 1 0
+force -freeze sim:/programsequencer/sel 00 0
+run
+run
+force -freeze sim:/programsequencer/reset 0 0

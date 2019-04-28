@@ -1,0 +1,58 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+
+entity AddSubtract16 is
+    port(MR : in std_logic_vector(39 downto 0);
+        P : in std_logic_vector(31 downto 0);
+        AMF : in std_logic_vector(4 downto 0);
+        R2 : out std_logic_vector(7 downto 0);
+        R1,R0 : out std_logic_vector(15 downto 0);
+        MV : out std_logic);
+    end AddSubtract16bit;
+    
+ architecture behav of AddSubtract16 is 
+     begin
+         process(AMF,P,MR)
+             
+         variable result: std_logic_vector(40 downto 0);
+         variable temp_mr, temp_p: std_logic_vector(40 downto 0);
+         variable Smr,Sp,Sr : std_logic;
+         
+         begin
+            temp_mr :='0' & MR; 
+            temp_p := "000000000" & P; -- P = X*Y from the Multiplier
+            case AMF is
+             when "00000" =>
+                 result:= "00000000000000000000000000000000000000000";
+             when "00001" =>
+                 result:= temp_p;
+             when "00010" =>
+                 result := temp_mr + temp_p; -- MR + X*Y
+             when "01100" =>
+                 result := temp_mr - temp_p; -- MR - X*Y
+             when others =>
+             result := "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
+             end case;
+         
+         Smr := temp_mr(39);
+         Sp := temp_p(31);
+         Sr := result(39);
+                  
+          -- Indicates if there is an overflow during addition    
+         if AMF = "00010" then
+         MV <= (Smr and Sp and (not Sr)) or ((not Smr) and (not Sp) and Sr);
+         end if;
+         
+         -- Indicates if there is an overflow during subtraction
+        if AMF = "01100" then
+        MV <=(Smr and (not Sp) and (not Sr)) or ((not Smr) and Sp and Sr);
+        end if; 
+       
+        R2 <= result(39 downto 32);
+        R1 <= result(31 downto 16);
+        R0 <= result(15 downto 0);
+        
+    end process;
+     
+ end behav;

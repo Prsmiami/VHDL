@@ -1,0 +1,9 @@
+{C:/Users/May Zar Lin/Desktop/VHDL/Multiplexer4to1.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Multiplexer4to1.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Multiplexer4to1
+-- Compiling architecture behav of Multiplexer4to1
+
+} {} {}}

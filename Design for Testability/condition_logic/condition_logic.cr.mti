@@ -1,0 +1,19 @@
+C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/condition_logic/Condition_Logic.vhd {1 {vcom -work work -2002 -explicit C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/condition_logic/Condition_Logic.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Condition_Logic
+-- Compiling architecture behav of Condition_logic
+
+} {} {}} C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/condition_logic/condition_logic_tb.vhd {2 {vcom -work work -2002 -explicit C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/condition_logic/condition_logic_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity condition_logic_tb
+-- Compiling architecture condition_logic_arch of condition_logic_tb
+** Warning: [4] C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/condition_logic/condition_logic_tb.vhd(44): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}}

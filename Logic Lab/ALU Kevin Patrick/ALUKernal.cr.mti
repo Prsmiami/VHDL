@@ -1,0 +1,16 @@
+C:/altera/13.0sp1/ALUKernal.vhd {2 {vcom -work work -2002 -explicit C:/altera/13.0sp1/ALUKernal.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity ALUKernel
+-- Compiling architecture arch of ALUKernel
+** Warning: [14] C:/altera/13.0sp1/ALUKernal.vhd(28): (vcom-1272) Length of expected is 16; length of actual is 18.
+
+** Warning: [14] C:/altera/13.0sp1/ALUKernal.vhd(41): (vcom-1272) Length of expected is 16; length of actual is 17.
+
+
+} {} {}}

@@ -1,0 +1,1032 @@
+C:/Users/een455spring14_g2/Desktop/VHDL1/TriStateBuffer14.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/TriStateBuffer14.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity tristatebuffer14
+-- Compiling architecture behav of tristatebuffer14
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/Count_Stack_Controlle.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/Count_Stack_Controlle.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity count_stack_controller
+-- Compiling architecture behav of count_stack_controller
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/program_counter.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/program_counter.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity program_counter
+-- Compiling architecture behav of program_counter
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/or_pass.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/or_pass.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity OR_PASS
+-- Compiling architecture behav of OR_PASS
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/programcounter.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/programcounter.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity program_counter
+-- Compiling architecture behav of program_counter
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/tristate_buffer16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/tristate_buffer16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity tristate_buffer16
+-- Compiling architecture behav of tristate_buffer16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/LoopStack.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/LoopStack.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity loop_stack
+-- Compiling architecture behav of loop_stack
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Final_DSP.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Final_DSP.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Final_DSP
+-- Compiling architecture struct of Final_DSP
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/TriStateBuffer16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/TriStateBuffer16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity tristatebuffer16
+-- Compiling architecture behav of tristatebuffer16
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/loop_comparator.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/loop_comparator.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity loop_comparator
+-- Compiling architecture behav of loop_comparator
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Tristatebuffer14to16.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Tristatebuffer14to16.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Tristatebuffer14to16
+-- Compiling architecture behav of Tristatebuffer14to16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/Register14.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/Register14.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity register14
+-- Compiling architecture behav of register14
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/shifter_array.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/shifter_array.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity shifter_array
+-- Compiling architecture behav of shifter_array
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/ProgramSequencer.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/ProgramSequencer.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity programsequencer
+-- Compiling architecture struct of programsequencer
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/Multiplexer4to1.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/Multiplexer4to1.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity multiplexer4to1
+-- Compiling architecture behav of multiplexer4to1
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/ProgramSequencer.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/ProgramSequencer.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ProgramSequencer
+-- Compiling architecture struct of ProgramSequencer
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/Register16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/Register16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity register16
+-- Compiling architecture behav of register16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/shifter.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/shifter.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity shifter
+-- Compiling architecture struct of shifter
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/Multiplier16bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/Multiplier16bit.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity multiplier16bit
+-- Compiling architecture behav of multiplier16bit
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/program_counter.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/program_counter.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity program_counter
+-- Compiling architecture behav of program_counter
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/or_pass.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/or_pass.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity or_pass
+-- Compiling architecture behav of or_pass
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/AddSubtract16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/AddSubtract16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_signed
+-- Compiling entity addsubtract16
+-- Compiling architecture behav of addsubtract16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/loop_comparator.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/loop_comparator.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity loop_comparator
+-- Compiling architecture behav of loop_comparator
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/tristate_buffer16.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/tristate_buffer16.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tristate_buffer16
+-- Compiling architecture behav of tristate_buffer16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/MAC.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/MAC.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity mac
+-- Compiling architecture struct of mac
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/Stack_Controller.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/Stack_Controller.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity stack_controller
+-- Compiling architecture behav of stack_controller
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/loopcomparator.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/loopcomparator.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity loop_comparator
+-- Compiling architecture behav of loop_comparator
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/PCStack.vhd} {2 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/PCStack.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity PC_Stack
+-- Compiling architecture Behav of PC_Stack
+** Warning: [14] C:/Users/May Zar Lin/Desktop/VHDL/PCStack.vhd(40): (vcom-1272) Length of expected is 14; length of actual is 16.
+
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/shifter_array.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/shifter_array.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity shifter_array
+-- Compiling architecture behav of shifter_array
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/processing_unit.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/processing_unit.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity processing_unit
+-- Compiling architecture struct of processing_unit
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Condition_Logic.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Condition_Logic.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Condition_Logic
+-- Compiling architecture behav of Condition_logic
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/inreg16.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/inreg16.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity inreg16
+-- Compiling architecture behav of inreg16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/outreg16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/outreg16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity outreg16
+-- Compiling architecture behav of outreg16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/nextaddressSelector.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/nextaddressSelector.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity next_address_selector
+-- Compiling architecture behav of next_address_selector
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/programcounter.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/programcounter.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity program_counter
+-- Compiling architecture behav of program_counter
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/AddSubtract16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/AddSubtract16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_signed
+-- Compiling entity addsubtract16
+-- Compiling architecture behav of addsubtract16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/PCStack.vhd {2 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/PCStack.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity pc_stack
+-- Compiling architecture behav of pc_stack
+** Warning: [14] C:/Users/een455spring14_g2/Desktop/VHDL/PCStack.vhd(40): (vcom-1167) Index value -2 is out of natural range 0 to 2147483647.
+** Warning: [14] C:/Users/een455spring14_g2/Desktop/VHDL/PCStack.vhd(40): Array length is 14; string literal length is 16.
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/MAC.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/MAC.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity mac
+-- Compiling architecture struct of mac
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/loop_counter.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/loop_counter.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity loop_counter
+-- Compiling architecture behav of loop_counter
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Multiplexer14.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Multiplexer14.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Multiplexer14
+-- Compiling architecture behav of Multiplexer14
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/Register14.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/Register14.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity register14
+-- Compiling architecture behav of register14
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/ALU.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/ALU.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity alu
+-- Compiling architecture arch of alu
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/TriStateBuffer8.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/TriStateBuffer8.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity tristatebuffer8
+-- Compiling architecture behav of tristatebuffer8
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Multiplexer16.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Multiplexer16.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Multiplexer16
+-- Compiling architecture behav of Multiplexer16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/ALUkernel.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/ALUkernel.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity alukernel
+-- Compiling architecture arch of alukernel
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/inreg16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/inreg16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity inreg16
+-- Compiling architecture behav of inreg16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/Condition_Logic.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/Condition_Logic.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity condition_logic
+-- Compiling architecture behav of condition_logic
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/Register16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/Register16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity register16
+-- Compiling architecture behav of register16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/Register8.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/Register8.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity register8
+-- Compiling architecture behav of register8
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/mux2_1.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/mux2_1.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX2_1
+-- Compiling architecture behav of MUX2_1
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/next_address_Mux.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/next_address_Mux.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity next_address_mux
+-- Compiling architecture behav of next_address_mux
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/nextaddressSelector.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/nextaddressSelector.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity next_address_selector
+-- Compiling architecture behav of next_address_selector
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/LoopStack.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/LoopStack.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity loop_stack
+-- Compiling architecture behav of loop_stack
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/program_memory.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/program_memory.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity program_memory
+-- Compiling architecture behav of program_memory
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/ALU.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/ALU.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity alu
+-- Compiling architecture arch of alu
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/loopcomparator.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/loopcomparator.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity loop_comparator
+-- Compiling architecture behav of loop_comparator
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Multiplexer8.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Multiplexer8.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Multiplexer8
+-- Compiling architecture behav of Multiplexer8
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/controller.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/controller.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity controller
+-- Compiling architecture behav of controller
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/shifter.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/shifter.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity shifter
+-- Compiling architecture struct of shifter
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Register8.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Register8.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Register8
+-- Compiling architecture behav of Register8
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/TriStateBuffer14.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/TriStateBuffer14.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity tristatebuffer14
+-- Compiling architecture behav of tristatebuffer14
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/program_counter.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/program_counter.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity program_counter
+-- Compiling architecture behav of program_counter
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/or_pass.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/or_pass.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity or_pass
+-- Compiling architecture behav of or_pass
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/TriStateBuffer14.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/TriStateBuffer14.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TriStateBuffer14
+-- Compiling architecture behav of TriStateBuffer14
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Count_Stack_Controlle.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Count_Stack_Controlle.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Count_Stack_Controller
+-- Compiling architecture Behav of Count_Stack_Controller
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/TriStateBuffer16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/TriStateBuffer16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity tristatebuffer16
+-- Compiling architecture behav of tristatebuffer16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/Tristatebuffer14to16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/Tristatebuffer14to16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity tristatebuffer14to16
+-- Compiling architecture behav of tristatebuffer14to16
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/LoopStack.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/LoopStack.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Loop_Stack
+-- Compiling architecture Behav of Loop_Stack
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/Tristatebuffer14to16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/Tristatebuffer14to16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity tristatebuffer14to16
+-- Compiling architecture behav of tristatebuffer14to16
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/TriStateBuffer16.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/TriStateBuffer16.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TriStateBuffer16
+-- Compiling architecture behav of TriStateBuffer16
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Register14.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Register14.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Register14
+-- Compiling architecture behav of Register14
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/mux2_1.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/mux2_1.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity mux2_1
+-- Compiling architecture behav of mux2_1
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/incrementer.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/incrementer.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity increment
+-- Compiling architecture behav of increment
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Multiplexer4to1.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Multiplexer4to1.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Multiplexer4to1
+-- Compiling architecture behav of Multiplexer4to1
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/ProgramSequencer.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/ProgramSequencer.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity programsequencer
+-- Compiling architecture struct of programsequencer
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Register16.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Register16.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Register16
+-- Compiling architecture behav of Register16
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Multiplier16bit.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Multiplier16bit.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Multiplier16bit
+-- Compiling architecture behav of Multiplier16bit
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/Multiplexer14.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/Multiplexer14.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity multiplexer14
+-- Compiling architecture behav of multiplexer14
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/program_memory.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/program_memory.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity program_memory
+-- Compiling architecture behav of program_memory
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/tristate_buffer16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/tristate_buffer16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity tristate_buffer16
+-- Compiling architecture behav of tristate_buffer16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/Stack_Controller.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/Stack_Controller.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity stack_controller
+-- Compiling architecture behav of stack_controller
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/PCStack.vhd {2 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/PCStack.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity pc_stack
+-- Compiling architecture behav of pc_stack
+** Warning: [14] C:/Users/een455spring14_g2/Desktop/VHDL1/PCStack.vhd(40): (vcom-1167) Index value -2 is out of natural range 0 to 2147483647.
+** Warning: [14] C:/Users/een455spring14_g2/Desktop/VHDL1/PCStack.vhd(40): Array length is 14; string literal length is 16.
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/MAC.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/MAC.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity MAC
+-- Compiling architecture struct of MAC
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Stack_Controller.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Stack_Controller.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Stack_Controller
+-- Compiling architecture behav of Stack_Controller
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/Multiplexer16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/Multiplexer16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity multiplexer16
+-- Compiling architecture behav of multiplexer16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/ALUkernel.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/ALUkernel.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity alukernel
+-- Compiling architecture arch of alukernel
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/Multiplexer4to1.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/Multiplexer4to1.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity multiplexer4to1
+-- Compiling architecture behav of multiplexer4to1
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/controller.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/controller.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity controller
+-- Compiling architecture behav of controller
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/shifter_array.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/shifter_array.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Shifter_Array
+-- Compiling architecture behav of Shifter_Array
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/inreg16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/inreg16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity inreg16
+-- Compiling architecture behav of inreg16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/Condition_Logic.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/Condition_Logic.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity condition_logic
+-- Compiling architecture behav of condition_logic
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/processing_unit.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/processing_unit.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity processing_unit
+-- Compiling architecture struct of processing_unit
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/Multiplier16bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/Multiplier16bit.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity multiplier16bit
+-- Compiling architecture behav of multiplier16bit
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/outreg16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/outreg16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity outreg16
+-- Compiling architecture behav of outreg16
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/outreg16.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/outreg16.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity outreg16
+-- Compiling architecture behav of outreg16
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/nextaddressSelector.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/nextaddressSelector.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity next_address_Selector
+-- Compiling architecture behav of next_address_Selector
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/CountStack.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/CountStack.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity count_stack
+-- Compiling architecture behav of count_stack
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/Multiplexer14.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/Multiplexer14.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity multiplexer14
+-- Compiling architecture behav of multiplexer14
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/AddSubtract16.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/AddSubtract16.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity AddSubtract16
+-- Compiling architecture behav of AddSubtract16
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/loop_counter.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/loop_counter.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity loop_counter
+-- Compiling architecture behav of loop_counter
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/incremental.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/incremental.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity increment
+-- Compiling architecture behav of increment
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/Multiplexer16.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/Multiplexer16.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity multiplexer16
+-- Compiling architecture behav of multiplexer16
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/loopcounter.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/loopcounter.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity loop_counter
+-- Compiling architecture behav of loop_counter
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/ALU.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/ALU.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ALU
+-- Compiling architecture arch of ALU
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/TriStateBuffer8.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/TriStateBuffer8.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TriStateBuffer8
+-- Compiling architecture behav of TriStateBuffer8
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/ALUkernel.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/ALUkernel.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ALUkernel
+-- Compiling architecture arch of ALUkernel
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/next_address_Selector.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/next_address_Selector.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity next_address_selector
+-- Compiling architecture behav of next_address_selector
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/processing_unit.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/processing_unit.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity processing_unit
+-- Compiling architecture struct of processing_unit
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/mux2_1.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/mux2_1.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity mux2_1
+-- Compiling architecture behav of mux2_1
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/increment.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/increment.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity increment
+-- Compiling architecture behav of increment
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/next_address_Mux.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/next_address_Mux.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity next_address_mux
+-- Compiling architecture behav of next_address_mux
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/next_address_Mux.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/next_address_Mux.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity next_address_Mux
+-- Compiling architecture behav of next_address_Mux
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/Count_Stack_Controlle.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/Count_Stack_Controlle.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity count_stack_controller
+-- Compiling architecture behav of count_stack_controller
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/Final_DSP.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/Final_DSP.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity final_dsp
+-- Compiling architecture struct of final_dsp
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/program_memory.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/program_memory.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity program_memory
+-- Compiling architecture behav of program_memory
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/loopcounter.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/loopcounter.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity loop_counter
+-- Compiling architecture behav of loop_counter
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/TriStateBuffer8.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/TriStateBuffer8.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity tristatebuffer8
+-- Compiling architecture behav of tristatebuffer8
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/loopcomparator.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/loopcomparator.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity loop_comparator
+-- Compiling architecture behav of loop_comparator
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/Multiplexer8.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/Multiplexer8.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity multiplexer8
+-- Compiling architecture behav of multiplexer8
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/Multiplexer8.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/Multiplexer8.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity multiplexer8
+-- Compiling architecture behav of multiplexer8
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/next_address_Selector.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/next_address_Selector.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity next_address_selector
+-- Compiling architecture behav of next_address_selector
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/controller.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/controller.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity controller
+-- Compiling architecture behav of controller
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/incrementer.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/incrementer.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity increment
+-- Compiling architecture behav of increment
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL1/Register8.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL1/Register8.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity register8
+-- Compiling architecture behav of register8
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/shifter.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/shifter.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Shifter
+-- Compiling architecture struct of Shifter
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/increment.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/increment.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity increment
+-- Compiling architecture behav of increment
+
+} {} {}} C:/Users/een455spring14_g2/Desktop/VHDL/CountStack.vhd {1 {vcom -work work -2002 -explicit C:/Users/een455spring14_g2/Desktop/VHDL/CountStack.vhd
+Model Technology ModelSim ALTERA vcom 6.1g Compiler 2006.08 Aug 12 2006
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity count_stack
+-- Compiling architecture behav of count_stack
+
+} {} {}}

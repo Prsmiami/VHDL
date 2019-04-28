@@ -1,0 +1,45 @@
+{C:/Users/May Zar Lin/Desktop/VHDL/ALUkernel.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/ALUkernel.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ALUkernel
+-- Compiling architecture arch of ALUkernel
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Register16.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Register16.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Register16
+-- Compiling architecture behav of Register16
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/TriStateBuffer16.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/TriStateBuffer16.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TriStateBuffer16
+-- Compiling architecture behav of TriStateBuffer16
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/Multiplexer16.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/Multiplexer16.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Multiplexer16
+-- Compiling architecture behav of Multiplexer16
+
+} {} {}} {C:/Users/May Zar Lin/Desktop/VHDL/ALU.vhd} {1 {vcom -nostats -work work -2002 -explicit {C:/Users/May Zar Lin/Desktop/VHDL/ALU.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.3 Compiler 2014.01 Jan  6 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ALU
+-- Compiling architecture arch of ALU
+
+} {} {}}

@@ -1,0 +1,108 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+Entity ALU_component is
+  Port(X,Y : in std_logic_vector(15 downto 0);
+    CI : in std_logic;
+    AMF : in std_logic_vector(4 downto 0);
+    CLK : in std_logic;
+    R : out std_logic_vector(15 downto 0);
+    AZ, AN, AC, AV, AS, C: out std_logic);
+end ALU_component;
+  
+architecture behavior of ALU_component is
+
+signal carry: std_logic_vector(16 downto 0);
+
+begin
+
+  carry <= "0000000000000000" & CI;
+  process(X,Y,AMF,CI,CLK)
+  variable xInput : std_logic_vector(16 downto 0);
+  variable yInput : std_logic_vector(16 downto 0);
+  variable output : std_logic_vector(16 downto 0);
+
+  begin
+    if rising_edge(CLK) then
+      xInput := '0' & X;
+      yInput := '0' & Y;
+      if(AMF = "10000") then
+        output := yInput;
+      elsif(AMF = "10001") then
+        output := yInput + 1;
+      elsif(AMF = "10010") then
+        output := xInput + yInput + carry;
+      elsif(AMF = "10011") then
+        output := xInput + yInput;
+      elsif(AMF = "10100") then
+        output := not(yInput);
+      elsif(AMF = "10101") then
+        output := 0 - yInput;
+      elsif(AMF = "10110") then
+        output := xInput - yInput + carry - 1;
+      elsif(AMF = "10111") then
+        output := xInput - yInput;
+      elsif(AMF = "11000") then
+        output := yInput - 1;
+      elsif(AMF = "11001") then
+        output := yInput - xInput;
+      elsif(AMF = "11010") then
+        output := yInput - xInput + carry - 1;
+      elsif(AMF = "11011") then
+        output := not(xInput);
+      elsif(AMF = "11100") then
+        output := xInput and yInput;
+      elsif(AMF = "11101") then
+        output := xInput or yInput;
+      elsif(AMF = "11110") then
+        output := xInput xor yInput;
+      elsif(AMF = "11111") then
+        --output := abs(xInput);
+      else
+        output := "ZZZZZZZZZZZZZZZZZ";
+      end if;
+
+      if(output(15 downto 0) = "0000000000000000") then
+        AZ<='1';
+      else
+        AZ<='0';
+      end if;
+
+      AN <= output(15);
+      AC <= output(16);
+      AS <= X(15);
+
+      if(AMF = "10111") then
+        if(X(15) = '0' and (not Y(15) = '1' and output(15) = '1')) then
+          AV <= '1';
+        elsif(X(15) = '0' and (not Y(15) = '0' and output(15) = '0')) then
+          AV <= '1';
+        else AV <= '0';
+        end if;
+
+      elsif(AMF = "11001") then
+        if(X(15) = '1' and Y(15) = '0' and output(15) = '1') then
+          AV <= '1';
+        elsif(X(15) = '0' and Y(15) = '1' and output(15) = '0') then
+          AV <= '1';
+        else AV <= '0';
+        end if;
+
+      else 
+        if(X(15) = '0' and Y(15) = '0' and output(15) = '1') then
+          AV <= '1';
+        else AV <= '0';
+        end if;
+      end if;
+      R <= output(15 downto 0);
+      C <= carry(16);
+    end if;
+  end process;
+end behavior;
+
+
+

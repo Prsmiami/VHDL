@@ -1,0 +1,774 @@
+Program Sequencer:
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+Entity ProgramSequencer is
+	Port ( 	DMD: inout std_logic_vector( 13 downto 0);
+		Inst: in std_logic_vector(23 downto 0);
+		ASTAT: in std_logic_vector(7 downto 0);
+		Sel: in std_logic_vector(1 downto 0);
+    		CLK: in std_logic;
+		Load: in std_logic_vector(2 downto 0);
+		Reset: in std_logic_vector(4 downto 0);
+		TSB_Ctr: in std_logic_vector(2 downto 0);
+		PMA: inout std_logic_vector(13 downto 0);
+		CC: in std_logic_vector(3 downto 0);
+		AddJump: in std_logic_vector(13 downto 0);
+		AddTC: in std_logic_vector(17 downto 0);
+		ps14: in std_logic_vector(13 downto 0);
+		push, pop: in std_logic_vector(2 downto 0);
+		Over, Under: out std_logic_vector(2 downto 0)
+		);
+	end ProgramSequencer;
+
+Architecture struct of ProgramSequencer is
+
+Component Loop_Stack is
+	port(   clk : in std_logic; --CLK for stack
+        	data_in : in std_logic_vector(17 downto 0);  --Data being pushed.
+        	data_out : out std_logic_vector(17 downto 0);  --Data being popped.
+		push, pop : in std_logic;
+		reset : in std_logic;
+        	overflow : out std_logic;  --Equal to 1 when stack is full.
+        	underflow : out std_logic  --Equal to 1 when stack is empty.
+		);
+	end Component Loop_Stack;
+
+
+Component Count_Stack is
+	port(   clk : in std_logic; --CLK for stack
+        	data_in : in std_logic_vector(13 downto 0);  --Data being pushed.
+        	data_out : out std_logic_vector(13 downto 0);  --Data being popped.
+		push, pop : in std_logic;
+		reset : in std_logic;
+        	overflow : out std_logic;  --Equal to 1 when stack is full.
+        	underflow : out std_logic  --Equal to 1 when stack is empty.
+		);
+	end Component Count_Stack;
+
+Component PC_Stack is
+	port(   clk : in std_logic; --CLK for stack
+        	data_in : in std_logic_vector(13 downto 0);  --Data being pushed.
+        	data_out : out std_logic_vector(13 downto 0);  --Data being popped.
+		push, pop : in std_logic;
+		reset : in std_logic;
+        	overflow : out std_logic;  --Equal to 1 when stack is full.
+        	underflow : out std_logic  --Equal to 1 when stack is empty.
+        	);
+	end Component PC_Stack;
+
+Component Condition_Logic is
+	port (	cond_code	: IN std_logic_vector(3 downto 0);
+		loop_cond	: IN std_logic_vector(3 downto 0);
+		CE		: IN std_logic;
+		status		: IN std_logic_vector(6 downto 0);
+		s       	: IN std_logic;	
+		cond		: OUT std_logic
+	);
+	end Component Condition_Logic;
+
+Component increment is
+	port (  incr_in: IN std_logic_vector(13 downto 0); 
+		incr_out: OUT std_logic_vector(13 downto 0)
+		);
+	end Component increment;
+
+Component loop_comparator is
+	port (  next_inst,last_inst: IN std_logic_vector(13 downto 0); 
+		clk: IN std_logic; -- Clock
+		isLast: OUT std_logic
+		);
+	end Component loop_comparator;
+
+Component loop_counter is
+	port( 	cntr_in: IN std_logic_vector(13 downto 0); --Data input
+		clk,load: IN std_logic; --Clock
+		CE: OUT std_logic ; --Counter Expired signal
+      		cntr_out: OUT std_logic_vector(13 downto 0) --Data output     
+ 		);
+	end Component loop_counter;
+
+Component next_address_Selector is 
+	port (	rs,cond		: IN std_logic ;
+		Inst		: IN std_logic_vector(23 downto 0);
+		LastInst	: IN std_logic;
+		add_sel		: OUT std_logic_vector(1 downto 0)
+		);
+	end Component next_address_Selector;
+
+Component program_counter is
+	port(	clk,rs		: IN std_logic;
+             	input		: IN std_logic_vector(13 downto 0);
+		output		: OUT std_logic_vector(13 downto 0)
+		);
+	end Component program_counter;
+
+Component Multiplexer14 is
+    	port(	Inp1, Inp2 : in std_logic_vector(13 downto 0);
+      		Sel : in std_logic;
+      		Outp : out std_logic_vector(13 downto 0)
+		);    
+  	end Component Multiplexer14;
+
+Component next_address_Mux is
+  	port(	Inp1, Inp2, Inp3, Inp4 : in std_logic_vector(13 downto 0);
+        	Sel : in std_logic_vector(1 downto 0);
+        	Outp : out std_logic_vector(13 downto 0)
+		);
+  	end component next_address_Mux;
+
+Component TriStateBuffer14 is
+	Port(	Data : in std_logic_vector(13 downto 0);
+      		En : in std_logic;
+      		Outp : out std_logic_vector(13 downto 0)
+		);
+  	end Component TriStateBuffer14;
+
+
+Component Register14 is
+    	Port(	Inp : in std_logic_vector(13 downto 0);
+      		Load, Clk : in std_logic;
+     		Outp : out std_logic_vector(13 downto 0)
+		); 
+  	end Component Register14;
+
+signal ps1, ps2, ps3, ps4, ps9, ps10, ps11, ps12,ps13,ps15: std_logic_vector(13 downto 0);
+signal ps5: std_logic_vector(17 downto 0);
+signal CE, ps6, ps7: std_logic;
+signal ps8: std_logic_vector(1 downto 0);
+
+begin
+	PSreg0: Register14 port map(DMD, Load(0), CLK, ps1);
+	PSmux0: Multiplexer14 port map(ps1,ps2,Sel(0),ps3);
+	CNTRCounter: loop_counter port map(ps3, CLK, Load(1), CE, ps4);
+	CountStack: Count_Stack port map(CLK, ps4, ps2, push(0), pop(0), reset(0), Over(0), Under(0));
+	T0: TriStateBuffer14 port map(ps4,TSB_Ctr(0),DMD);
+	ConditionLogic: Condition_Logic port map(CC, PS5(17 downto 14), CE, ASTAT(6 downto 0), ASTAT(7), ps6);
+	LoopStack: Loop_Stack port map(CLK, AddTC, ps5, push(1), pop(1), reset(1), Over(1), Under(1));
+	LoopComparator: loop_comparator port map(ps5(13 downto 0), ps9, clk, ps7);
+	ProgramCounter: program_counter port map(CLK, reset(3), ps9, ps10);
+	Increment1: increment port map(ps10, ps11);
+	PCStack: PC_Stack port map(CLK, ps11, ps12, push(2), pop(2), reset(2), Over(2), Under(2));
+	NextADDSS: next_address_Selector port map(reset(4), ps6, Inst, ps7, ps8);
+	NADDMux: next_address_Mux port map(AddJump, ps11, ps12, ps14, ps8, ps13);
+	PSreg1: Register14 port map(PMA, Load(2), CLK, ps15);
+	PSmux1: Multiplexer14 port map(ps15,ps13,Sel(1),ps9);
+	T1: TriStateBuffer14 port map(ps13,TSB_Ctr(1),PMA);
+
+end struct;
+
+
+
+Loop_Stack:
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Loop_Stack is
+port(   clk : in std_logic; --CLK for stack
+        data_in : in std_logic_vector(17 downto 0);  --Data being pushed.
+        data_out : out std_logic_vector(17 downto 0);  --Data being popped.
+		push, pop : in std_logic;
+		reset : in std_logic;
+        overflow : out std_logic;  --Equal to 1 when stack is full.
+        underflow : out std_logic  --Equal to 1 when stack is empty.
+        );
+end Loop_Stack;
+
+architecture Behav of Loop_Stack is
+
+type memory_type is array (3 downto 0) of std_logic_vector(17 downto 0);
+signal stack_memory : memory_type := (others => (others => '0'));
+signal stack_pointer : integer := 3;
+signal full : std_logic := '0';
+signal empty : std_logic := '1';
+
+begin
+
+overflow <= full;
+underflow <= empty;
+
+process(clk)
+begin
+	if(rising_edge(clk) and reset = '0') then
+		if (push = '1' and full = '0' and pop = '0') then
+			stack_memory(stack_pointer) <= data_in;
+			empty <= '0';
+			if(stack_pointer /= 0) then
+				stack_pointer <= stack_pointer - 1;
+			end if;
+		end if;
+		if (pop = '1' and push = '0') then
+			if(empty = '1') then
+				data_out <= "ZZZZZZZZZZZZZZZZZZ";
+			else
+				data_out <= stack_memory(stack_pointer + 1);
+				stack_pointer <= stack_pointer + 1;
+			end if;
+		end if;
+	end if;
+	if (reset = '1') then
+		stack_memory(0) <= "ZZZZZZZZZZZZZZZZZZ";
+		stack_memory(1) <= "ZZZZZZZZZZZZZZZZZZ";
+		stack_memory(2) <= "ZZZZZZZZZZZZZZZZZZ";
+		stack_memory(3) <= "ZZZZZZZZZZZZZZZZZZ";
+		stack_pointer <= 3;
+		full <= '0';
+		empty <= '1';
+	end if;
+	if(stack_pointer = 0) then
+		full <= '1';
+		empty <= '0';
+	elsif(stack_pointer = 3) then
+		full <= '0';
+		empty <= '1';
+	else
+		full <= '0';
+		empty <= '0';
+	end if;
+end process;
+end Behav;
+
+
+
+
+Count_Stack:
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Count_Stack is
+port(   clk : in std_logic; --CLK for stack
+        data_in : in std_logic_vector(13 downto 0);  --Data being pushed.
+        data_out : out std_logic_vector(13 downto 0);  --Data being popped.
+		push, pop : in std_logic;
+		reset : in std_logic;
+        overflow : out std_logic;  --Equal to 1 when stack is full.
+        underflow : out std_logic  --Equal to 1 when stack is empty.
+        );
+end Count_Stack;
+
+architecture Behav of Count_Stack is
+
+type memory_type is array (3 downto 0) of std_logic_vector(13 downto 0);
+signal stack_memory : memory_type := (others => (others => '0'));
+signal stack_pointer : integer := 3;
+signal full : std_logic := '0';
+signal empty : std_logic := '1';
+
+begin
+
+overflow <= full;
+underflow <= empty;
+
+process(clk)
+begin
+	if(rising_edge(clk) and reset = '0') then
+		if (push = '1' and full = '0' and pop = '0') then
+			stack_memory(stack_pointer) <= data_in;
+			empty <= '0';
+			if(stack_pointer /= 0) then
+				stack_pointer <= stack_pointer - 1;
+			end if;
+		end if;
+		if (pop = '1' and push = '0') then
+			if(empty = '1') then
+				data_out <= "ZZZZZZZZZZZZZZ";
+			else
+				data_out <= stack_memory(stack_pointer + 1);
+				stack_pointer <= stack_pointer + 1;
+			end if;
+		end if;
+	end if;
+	if (reset = '1') then
+		stack_memory(0) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(1) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(2) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(3) <= "ZZZZZZZZZZZZZZ";
+		stack_pointer <= 3;
+		full <= '0';
+		empty <= '1';
+	end if;
+	if(stack_pointer = 0) then
+		full <= '1';
+		empty <= '0';
+	elsif(stack_pointer = 3) then
+		full <= '0';
+		empty <= '1';
+	else
+		full <= '0';
+		empty <= '0';
+	end if;
+end process;
+end Behav;
+
+
+
+PC_Stack:
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity PC_Stack is
+port(   clk : in std_logic; --CLK for stack
+        data_in : in std_logic_vector(13 downto 0);  --Data being pushed.
+        data_out : out std_logic_vector(13 downto 0);  --Data being popped.
+		push, pop : in std_logic;
+		reset : in std_logic;
+        overflow : out std_logic;  --Equal to 1 when stack is full.
+        underflow : out std_logic  --Equal to 1 when stack is empty.
+        );
+end PC_Stack;
+
+architecture Behav of PC_Stack is
+
+type memory_type is array (15 downto 0) of std_logic_vector(13 downto 0);
+signal stack_memory : memory_type := (others => (others => '0'));
+signal stack_pointer : integer := 15;
+signal full : std_logic := '0';
+signal empty : std_logic := '1';
+
+begin
+
+overflow <= full;
+underflow <= empty;
+
+process(clk)
+begin
+	if(rising_edge(clk) and reset = '0') then
+		if (push = '1' and full = '0' and pop = '0') then
+			stack_memory(stack_pointer) <= data_in;
+			empty <= '0';
+			if(stack_pointer /= 0) then
+				stack_pointer <= stack_pointer - 1;
+			end if;
+		end if;
+		if (pop = '1' and push = '0') then
+			if(empty = '1') then
+				data_out <= "ZZZZZZZZZZZZZZZZ";
+			else
+				data_out <= stack_memory(stack_pointer + 1);
+				stack_pointer <= stack_pointer + 1;
+			end if;
+		end if;
+	end if;
+	if (reset = '1') then
+		stack_memory(0) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(1) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(2) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(3) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(4) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(5) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(6) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(7) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(8) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(9) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(10) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(11) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(12) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(13) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(14) <= "ZZZZZZZZZZZZZZ";
+		stack_memory(15) <= "ZZZZZZZZZZZZZZ";
+		stack_pointer <= 15;
+		full <= '0';
+		empty <= '1';
+	end if;
+	if(stack_pointer = 0) then
+		full <= '1';
+		empty <= '0';
+	elsif(stack_pointer = 15) then
+		full <= '0';
+		empty <= '1';
+	else
+		full <= '0';
+		empty <= '0';
+	end if;
+end process;
+end Behav;
+
+
+
+Condition_Logic:
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Condition_Logic is
+port (	cond_code	: IN std_logic_vector(3 downto 0);	-- condition code from the instruction
+				loop_cond	: IN std_logic_vector(3 downto 0);	-- condition for the DO Util loop
+						CE		: IN std_logic;				-- CE condition for the DO Util Loop
+				status		: IN std_logic_vector(7 downto 0);	-- data from register ASTAT
+					s       : IN std_logic;	-- control signal to select which condition code to check
+					cond		: OUT std_logic
+	);
+
+end Condition_Logic;
+
+architecture behav of Condition_logic is 
+begin 
+	process (cond_code, loop_cond, s)
+	variable c : std_logic;
+		begin
+		if (s = '1') then
+		case cond_code is 
+			
+when "0000" => c := status(0);		-- EQ
+when "0001" => c := not status(0);		-- NE
+when "0010" => c := not ((status(1) XOR status(2)) OR status(0));	-- GT			
+when "0011" => c := (status(1) XOR status(2)) OR status(0);		-- LE			
+when "0100" => c := status(1) XOR status(2);				-- LT			
+when "0101" => c := not (status(1) XOR status(2));			-- GE			
+when "0110" => c := status(2);		-- AV			
+when "0111" => c := not (status(2));		-- NOT AV			
+when "1000" => c := status(3);		-- AC			
+when "1001" => c := not (status(3));		-- NOT AC			
+when "1010" => c := status(4);		-- NEG			
+when "1011" => c := not (status(4));		-- POS			
+when "1100" => c := status(6);		-- MV			
+when "1101" => c := not (status(6));		-- NOT MV			
+when "1110" => c := not CE;			-- NOT CE			
+when "1111" => c := '1';			-- Always true		
+when others => c := '0';
+		
+end case;
+elsif (s = '0') then	
+case loop_cond is 
+			
+when "0000" => c := not status(0);		-- NE			
+when "0001" => c := status(0);		-- EQ			
+when "0010" => c := (status(1) XOR status(2)) OR status(0);		-- LE 			
+when "0011" => c := not ((status(1) XOR status(2)) OR status(0));	-- GT			
+when "0100" => c := not (status(1) XOR status(2));			-- GE			
+when "0101" => c := status(1) XOR status(2);				-- LT			
+when "0110" => c := not (status(2));		-- NOT AV		
+when "0111" => c := status(2);		-- AV
+when "1000" => c := not (status(3));		-- NOT AC
+when "1001" => c := status(3);		-- AC
+when "1010" => c := not (status(4));		-- POS
+when "1011" => c := status(4);		-- NEG
+when "1100" => c := not (status(6));		-- NOT MV
+when "1101" => c := status(6);		-- MV
+when "1110" => c := CE;			-- CE
+when "1111" => c := '1';			-- Always true
+when others => c := '0';	
+
+end case;
+end if;
+		cond <= c;
+	end process;
+end behav;
+
+
+
+
+increment:
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity increment is 
+port (   incr_in: IN std_logic_vector(13 downto 0); -- Increment input (from PC counter)         
+         incr_out: OUT std_logic_vector(13 downto 0) -- Increment ouput (to next address mux)
+        );
+end increment;
+
+architecture behav of increment is
+begin  
+process(incr_in)    
+begin     
+incr_out <= incr_in+1; -- 
+  end process;
+end behav;
+
+
+loop_comparator:
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity loop_comparator is
+
+port (  next_inst,last_inst: IN std_logic_vector(13 downto 0); 
+				clk: IN std_logic; -- Clock
+				isLast: OUT std_logic);
+end loop_comparator;
+
+architecture behav of loop_comparator is
+begin
+  process(clk)
+		begin
+			if(clk='1' and clk' event) then -- clk rising edge
+			if(next_inst = last_inst) then
+			isLast <= '1';
+
+			elsif(next_inst /= last_inst) then
+			isLast <= '0';
+ 			end if;
+			end if;
+end process;
+end behav;
+
+
+
+
+loop_counter:
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity loop_counter is
+  
+port( cntr_in: IN std_logic_vector(13 downto 0); --Data input
+      clk,load: IN std_logic; --Clock
+			CE: OUT std_logic ; --Counter Expired signal
+      cntr_out: OUT std_logic_vector(13 downto 0) --Data output     
+ );
+end loop_counter;
+
+architecture behav of loop_counter is
+   signal count : integer;
+begin
+  process(clk) -- Do this every time the clock changes
+  begin
+      CE <= '0';
+     if (load = '1') then
+     	count<=conv_integer(cntr_in);
+    end if;
+		if (count <= 1) then
+     	CE<='1';
+   	end if;
+    If (clk = '1' and clk' event) then
+   		 count <= count-1;
+    end if ;
+cntr_out <= cntr_in; --conv_std_logic_vector(count, 14); 
+	end process;
+end behav;
+
+
+next_address_Selector:
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+
+entity next_address_Selector is 
+	port (rs,cond		: IN std_logic ;	      -- condition code in the instruction
+					Inst		: IN std_logic_vector(23 downto 0);	-- 24 bits instruction
+				LastInst	: IN std_logic;				-- loop_end condition from the loop comparator
+					add_sel	: OUT std_logic_vector(1 downto 0)
+);
+
+end next_address_Selector ;
+
+architecture behav of next_address_Selector is 
+begin
+		process (rs, Inst)		
+		variable s	: std_logic_vector(1 downto 0) ;		
+			begin
+		   	if (rs = '1') then
+		      	s := "00"; 
+				elsif (Inst(23 downto 19) = "00011") then 
+						if (cond = '1') then
+							s := "11" ; 	-- select the address from the IR
+						else
+							s := "10" ;	-- select from the pc incrementer
+						end if;
+						-- if the instruction is a conditional return
+				elsif (Inst(23 downto 5) = "0000101000000000000") then
+						if (cond = '1') then
+								s := "01" ;	-- select from the pc stack
+					else
+								s := "10" ;	-- select from the pc incrementer						
+					end if;
+			-- if the instruction is call or jump on Flag In
+			
+			elsif (Inst(23 downto 16) = "00000011") then
+			-- if the instruction is in end of the DO Util loop
+			   if (LastInst = '1') then
+					if (cond = '1') then
+							s := "10" ;	-- select from the pc incrementer, end the loop
+					else
+							s := "01" ;	-- select from the pc stack, start the loop again						
+					end if;
+						-- other 
+				else
+					s := "10" ;		-- select from the pc incrementer
+				end if;
+			end if;			-- output the result
+					add_sel <= s;
+end process;
+end behav;
+		
+	
+
+
+program_counter:
+
+library ieee;
+use ieee.std_logic_1164.all;
+ 
+entity program_counter is
+port(clk,rs: IN std_logic;          
+	input: IN std_logic_vector(13 downto 0);
+  output: OUT std_logic_vector(13 downto 0));
+
+end program_counter;
+
+
+architecture behav of program_counter is
+		signal storage: std_logic_vector(13 downto 0)  ;
+ begin
+      process(clk,input,rs)
+  begin
+         
+	if rs='1' then
+             --
+	storage <= (others=>'0');
+             
+	output<=(others=>'0');
+          
+	elsif(clk='0' and clk' event) then
+           
+ 	OUTPUT <= input;
+          
+	elsif (clk='1' and clk' event) then
+--           
+ 	output <= storage;
+          
+	end if;
+        
+  end process;
+   
+end behav;
+	
+
+
+Multiplexer14:
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Multiplexer14 is
+  port(Inp1, Inp2 : in std_logic_vector(13 downto 0);
+        Sel : in std_logic;
+        Outp : out std_logic_vector(13 downto 0));
+  end Multiplexer14;
+  
+  
+architecture behav of Multiplexer14 is
+  begin
+    process(Inp1, Inp2, Sel)
+      begin
+       if (Sel = '0') then
+         Outp <= Inp1;
+       elsif (Sel = '1') then
+         Outp <= Inp2;
+       else
+         null;
+       end if;
+ end process;
+end behav;
+
+
+
+
+next_address_Mux:
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity next_address_Mux is
+  	port(	Inp1, Inp2, Inp3, Inp4 : in std_logic_vector(13 downto 0);
+        	Sel : in std_logic_vector(1 downto 0);
+        	Outp : out std_logic_vector(13 downto 0)
+		);
+  	end next_address_Mux;
+  
+  
+architecture behav of next_address_Mux is
+  begin
+    process(Inp1, Inp2, Inp3, Inp4, Sel)
+      begin
+       if (Sel = "00") then
+         Outp <= Inp1;
+       elsif (Sel = "01") then
+         Outp <= Inp2;
+	elsif (Sel = "10") then
+         Outp <= Inp3;
+	elsif (Sel = "11") then
+         Outp <= Inp4;
+       else
+         null;
+       end if;
+ end process;
+end behav;
+
+
+
+
+Register14:
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity Register14 is
+  Port(Inp : in std_logic_vector(13 downto 0);
+    Load, Clk : in std_logic;
+    Outp : out std_logic_vector(13 downto 0));
+  end Register14;
+
+Architecture behav of Register14 is
+  Signal storage : std_logic_vector(13 downto 0);
+  begin
+    process(Inp, Load, Clk)
+    begin
+    if (Clk'event and Clk = '1' and Load = '1') then
+      storage <= Inp;
+    elsif (Clk'event and Clk = '0') then
+      Outp <= storage;
+    else
+      null;
+    end if;
+  end process;
+end behav;
+
+
+
+
+
+TriStateBuffer14:
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity TriStateBuffer14 is
+  Port(Data : in std_logic_vector(13 downto 0);
+       En : in std_logic;
+       Outp : out std_logic_vector(13 downto 0));
+end  TriStateBuffer14;
+
+Architecture behav of TriStateBuffer14 is
+  begin
+    process(Data, En)
+      begin
+      if (En = '1') then
+        Outp <= Data;
+      else
+        Outp <= "ZZZZZZZZZZZZZZ";
+      end if;
+    end process;
+end behav;
+
+
+
+
+

@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\Tristatebuffer14to16
+Estack_controller
+Z0 w1397239218
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\stack_controller
+Z4 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/stack_controller/Stack_Controller.vhd
+Z5 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/stack_controller/Stack_Controller.vhd
+l0
+L5
+VaXOo:Fa:i;]llbhXdZ9UN0
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1524804842.636000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/stack_controller/Stack_Controller.vhd|
+Z9 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/stack_controller/Stack_Controller.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 YOOPoRSI4GMlC9cHWUSHN2
+!i10b 1
+Abehav
+R1
+R2
+DEx4 work 16 stack_controller 0 22 aXOo:Fa:i;]llbhXdZ9UN0
+l20
+L19
+VWoFSVgDIST`]9OG59U4Gg0
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 7fPLWVfRHQlDRSE]`<^[D3
+!i10b 1
+Estack_controller_tb
+Z12 w1524804837
+Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+R3
+Z14 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/stack_controller/stack_controller_tb.vhd
+Z15 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/stack_controller/stack_controller_tb.vhd
+l0
+L5
+V8MW[;Pmh>_oaXHV_RUd6i0
+R6
+32
+Z16 !s108 1524804842.747000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/stack_controller/stack_controller_tb.vhd|
+Z18 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/stack_controller/stack_controller_tb.vhd|
+R10
+R11
+!s100 ?oQTZQaj7VVQK`b:ASOJU0
+!i10b 1
+Astack_controller_arch
+R13
+R1
+R2
+DEx4 work 19 stack_controller_tb 0 22 8MW[;Pmh>_oaXHV_RUd6i0
+l36
+L7
+VB^eiKX?>VEbF0W9SL_8Wg1
+R6
+32
+R16
+R17
+R18
+R10
+R11
+!s100 ]JB_IAQ[J]N634Kb^LS3m0
+!i10b 1

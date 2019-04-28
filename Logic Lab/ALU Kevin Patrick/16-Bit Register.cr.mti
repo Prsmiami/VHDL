@@ -1,0 +1,9 @@
+{C:/Users/drpal_000/Documents/School Folder/2016 - Spring/ECE 315 - Digital Design II/16-Bit Register.vhd} {1 {vcom -work work -2002 -explicit -vopt {C:/Users/drpal_000/Documents/School Folder/2016 - Spring/ECE 315 - Digital Design II/16-Bit Register.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Register16Bit
+-- Compiling architecture behavior of Register16Bit
+
+} {} {}}

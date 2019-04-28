@@ -1,0 +1,49 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.my.all;
+
+ENTITY SYNC IS
+PORT(
+CLK: IN STD_LOGIC;
+HSYNC: OUT STD_LOGIC;
+VSYNC: OUT STD_LOGIC;
+R: OUT STD_LOGIC_VECTOR(7 downto 0);
+G: OUT STD_LOGIC_VECTOR(7 downto 0);
+B: OUT STD_LOGIC_VECTOR(7 downto 0)
+
+);
+END SYNC;
+
+
+ARCHITECTURE MAIN OF SYNC IS
+SIGNAL RGB: STD_LOGIC_VECTOR(3 downto 0);
+SIGNAL square1_x_axis,square1_y_axis: INTEGER RANGE 0 TO 1688:=0;
+SIGNAL square2_x_axis,square2_y_axis: INTEGER RANGE 0 TO 1688:=0;
+SIGNAL HPOS: INTEGER RANGE 0 TO 1688:=0;
+SIGNAL VPOS: INTEGER RANGE 0 TO 1066:=0;
+BEGIN
+square(HPOS,VPOS,square1_x_axis,square1_y_axis,RGB);
+square(HPOS,VPOS,square2_x_axis,square2_y_axis,RGB);
+ PROCESS(CLK)
+ BEGIN
+IF(CLK'EVENT AND CLK='1')THEN
+	R<=(others=>'1');
+	G<=(others=>'1');
+	B<=(others=>'0');
+	
+	--Frame control code
+	
+	
+	--Porch control code
+	
+	
+	--Synch control code
+	
+	
+	--Square signal control
+
+
+ END IF;
+ END PROCESS;
+ END MAIN;

@@ -1,0 +1,2 @@
+
+library ieee;use ieee.std_logic_1164.all;entity Multiplexer16 is  port(Inp1, Inp2 : in std_logic_vector(15 downto 0);        Sel : in std_logic;        Outp : out std_logic_vector(15 downto 0));  end Multiplexer16;    architecture behav of Multiplexer16 is  begin    process(Inp1, Inp2, Sel)      begin       if (Sel = '0') then         Outp <= Inp1;       elsif (Sel = '1') then         Outp <= Inp2;       else         null;       end if; end process;end behav;

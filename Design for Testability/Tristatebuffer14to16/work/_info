@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\register14
+Etristatebuffer14to16
+Z0 w1398189648
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\Tristatebuffer14to16
+Z4 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/Tristatebuffer14to16/Tristatebuffer14to16.vhd
+Z5 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/Tristatebuffer14to16/Tristatebuffer14to16.vhd
+l0
+L5
+VG5gZWFR>aYQdgLiCR;?dP0
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1524802016.259000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/Tristatebuffer14to16/Tristatebuffer14to16.vhd|
+Z9 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/Tristatebuffer14to16/Tristatebuffer14to16.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 DcTQBGY3NEigddNVKL7>d1
+!i10b 1
+Abehav
+R1
+R2
+DEx4 work 20 tristatebuffer14to16 0 22 G5gZWFR>aYQdgLiCR;?dP0
+l12
+L11
+VTjoVW0zf73YXLhiI=Pz7E3
+!s100 F:?F7IUEl2A>dV`ONn6J]2
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!i10b 1
+Etristatebuffer14to16_tb
+Z12 w1524801917
+Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+R3
+Z14 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/Tristatebuffer14to16/Tristatebuffer14to16_tb.vhd
+Z15 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/Tristatebuffer14to16/Tristatebuffer14to16_tb.vhd
+l0
+L5
+Vf0gad@8;OJgEZPi0Q9<]60
+!s100 P:RKUN`5=XRYge8]YCHW@2
+R6
+32
+!i10b 1
+Z16 !s108 1524802016.372000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/Tristatebuffer14to16/Tristatebuffer14to16_tb.vhd|
+Z18 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/Tristatebuffer14to16/Tristatebuffer14to16_tb.vhd|
+R10
+R11
+Atristatebuffer14to16_arch
+R13
+R1
+R2
+Z19 DEx4 work 23 tristatebuffer14to16_tb 0 22 f0gad@8;OJgEZPi0Q9<]60
+l19
+L7
+Z20 VMfNG8[f@]N;dGQ2Ni0lce3
+Z21 !s100 lZQ:3@@?i7G^mMn6Jhn_?1
+R6
+32
+!i10b 1
+R16
+R17
+R18
+R10
+R11

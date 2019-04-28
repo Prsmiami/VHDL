@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\loop_counter
+Eloop_comparator
+Z0 w1524795557
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\loop_comparator
+Z4 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_comparator/loop_comparator.vhd
+Z5 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_comparator/loop_comparator.vhd
+l0
+L4
+V9;47;l6<CJ]SahKX:0n`V0
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1524795885.008000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_comparator/loop_comparator.vhd|
+Z9 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_comparator/loop_comparator.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 I]N^]l>:;N7fJ`6ZBTdeK1
+!i10b 1
+Abehav
+R1
+R2
+DEx4 work 15 loop_comparator 0 22 9;47;l6<CJ]SahKX:0n`V0
+l12
+L11
+VObiEDa@0KEIOGD1go?l?[1
+!s100 ;F@fFNnWo_3Qh9C87CZ3P2
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!i10b 1
+Eloop_comparator_tb
+Z12 w1524795881
+Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+R3
+Z14 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_comparator/loop_comparator_tb.vhd
+Z15 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_comparator/loop_comparator_tb.vhd
+l0
+L5
+VHDM]D]_^Ye7zND<Ch==8E3
+!s100 Kj@TL_O@TZH:J^MSbBZkl3
+R6
+32
+!i10b 1
+Z16 !s108 1524795885.126000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_comparator/loop_comparator_tb.vhd|
+Z18 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_comparator/loop_comparator_tb.vhd|
+R10
+R11
+Aloop_comparator_arch
+R13
+R1
+R2
+DEx4 work 18 loop_comparator_tb 0 22 HDM]D]_^Ye7zND<Ch==8E3
+l22
+L7
+VM5Dn>SR9QPd0L_^Hf;hSa3
+!s100 8L9^k97[iDf4z;MECKZOH0
+R6
+32
+!i10b 1
+R16
+R17
+R18
+R10
+R11

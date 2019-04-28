@@ -1,0 +1,32 @@
+Thu Mar 20 2:07:04 PM Eastern Daylight Time 2014
+Trace back: can't read "winData(0,0,tabid)": no such element in array
+    while executing
+"set tabid $winData($id,tabid)"
+    (procedure "::HTE::LexParser::browserTrailer" line 44)
+    invoked from within
+"::HTE::LexParser::browserTrailer 0,0"
+    ("eval" body line 1)
+    invoked from within
+"eval $item"
+    (procedure "::HTE::TCOM::tcom" line 38)
+    invoked from within
+"::HTE::TCOM::tcom 0,0"
+    ("after" script)
+  2: ::tkerror {can't read "winData(0,0,tabid)": no such element in array}
+  1: ::bgerror {can't read "winData(0,0,tabid)": no such element in array}
+Tue Apr 22 12:39:11 EDT 2014
+Trace back: couldn't open "C:/Users/May Zar Lin/Desktop/VHDL/Program Seq/ProgramSequencer.vhd.bak": no such file or directory
+    while executing
+"open $fileName w"
+    (object "::.main_pane.source.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SaveFile" body line 17)
+    invoked from within
+"SaveFile"
+    (object "::.main_pane.source.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::CheckModification" body line 29)
+    invoked from within
+"::.main_pane.source.interior.cs.body.srcobj CheckModification"
+    (in namespace inscope "::vsimwidgets::Srcobj" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Srcobj {::.main_pane.source.interior.cs.body.srcobj CheckModification}"
+    (command bound to event)
+  <2:C:/Modeltech_pe_edu_10.3/win32pe_edu/tk8.5/bgerror.tcl:92: ::tkerror {couldn't open "C:/Users/May Zar Lin/Desktop/VHDL/Program Seq/ProgramSequencer.vhd.bak": no such file or directory}
+  <1:C:/Modeltech_pe_edu_10.3/win32pe_edu/tk8.5/dialog.tcl:178: ::tk::dialog::error::bgerror {couldn't open "C:/Users/May Zar Lin/Desktop/VHDL/Program Seq/ProgramSequencer.vhd.bak": no such file or directory}

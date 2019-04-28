@@ -1,0 +1,50 @@
+library ieee;
+
+use ieee.std_logic_1164.all;
+
+entity Stack_Controller is
+
+port( clk,reset: IN std_logic;
+       PMD: IN std_logic_vector(23 downto 0);
+       CE, cond: IN std_logic;         -- counter expired and loop condition tested
+       add_sel: IN std_logic_vector(1 downto 0); -- next address selector
+       push, pop: OUT std_logic_vector(2 downto 0); -- Push or pop signals for stacks: Count, Status, PC and Loop 
+       rs: OUT std_logic_vector(2 downto 0); -- Reset signals for stacks: Count, Status, PC and Loop
+       overflow: IN std_logic_vector(2 downto 0);
+       underflow: IN std_logic_vector(2 downto 0)
+   );
+
+end Stack_Controller;
+
+architecture behav of Stack_Controller is
+    begin
+        process (clk, reset, PMD, CE, cond, add_sel, overflow, underflow)
+            begin
+                push <= "000";
+                pop <= "000";
+                rs <= "000";
+                if (reset = '1') then
+                    rs <= "111";
+                elsif (PMD(23 downto 18) = "000101") and (overflow(2) /= '1') and (overflow(1) /= '1') then
+                    push(2) <= '1';
+                    push(1) <= '1';
+                    if (PMD(3 downto 0) = "1110") then
+                        push(0)<='1'; 
+                   end if;
+                elsif ((PMD(23 downto 18) = "000111") or ((PMD(23 downto 8) = "0000101100000000") and (PMD(5 downto 4) = "01"))) and (cond = '1') then
+                   push(2) <= '1';
+                elsif (PMD(23 downto 16) = "00000011") and (PMD(0) = '1') then
+                   push(2) <= '1';
+                elsif (PMD(23 downto 4) = "00001010000000000000") and (cond = '1') then
+                    pop(2) <= '1';
+                elsif (add_sel = "10") and (cond = '1') then
+                    pop(2) <= '1';
+                    pop(1) <= '1';
+                    if (CE = '1') then
+                        pop(0) <= '1';
+                   end if;
+               end if;
+        end process;
+    end behav;
+    
+    

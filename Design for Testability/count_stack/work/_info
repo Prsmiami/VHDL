@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\loop_stack_tb
+Ecount_stack
+Z0 w1397230470
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\count_stack
+Z4 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/count_stack/Count_Stack.vhd
+Z5 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/count_stack/Count_Stack.vhd
+l0
+L4
+Vg6aQid8bzco^J^md@hN0M3
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1524771658.292000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/count_stack/Count_Stack.vhd|
+Z9 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/count_stack/Count_Stack.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 omJ62g3OPN:JS8=HZ]PY43
+!i10b 1
+Abehav
+R1
+R2
+DEx4 work 11 count_stack 0 22 g6aQid8bzco^J^md@hN0M3
+l23
+L15
+Vjc]zlT_J;TV9ccS[Lhf1@3
+!s100 MbgOZ`U81Ui8DkF0[S_@V1
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!i10b 1
+Ecount_stack_tb
+Z12 w1524771651
+Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+R3
+Z14 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/count_stack/count_stack_tb.vhd
+Z15 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/count_stack/count_stack_tb.vhd
+l0
+L5
+V8oMCU474Ag<5fIL8Je01c3
+!s100 lmgYnF8KoP6IF<nZ8oI[f0
+R6
+32
+!i10b 1
+Z16 !s108 1524771658.409000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/count_stack/count_stack_tb.vhd|
+Z18 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/count_stack/count_stack_tb.vhd|
+R10
+R11
+Acount_stack_arch
+R13
+R1
+R2
+Z19 DEx4 work 14 count_stack_tb 0 22 8oMCU474Ag<5fIL8Je01c3
+l30
+L7
+V`?=j8_ZCR<za;GZY694U52
+!s100 PLV9UgRTI:KlUSfddZ9Te1
+R6
+32
+!i10b 1
+R16
+R17
+R18
+R10
+R11

@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\program_counter
+Emultiplexer14
+Z0 w1395331198
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\multiplexer14
+Z4 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/multiplexer14/Multiplexer14.vhd
+Z5 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/multiplexer14/Multiplexer14.vhd
+l0
+L4
+VE=ca;DZO``ZS[zZ]X1HUj3
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1524799570.501000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/multiplexer14/Multiplexer14.vhd|
+Z9 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/multiplexer14/Multiplexer14.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 i]ba2;E>^DTA8dk:>][gB2
+!i10b 1
+Abehav
+R1
+R2
+DEx4 work 13 multiplexer14 0 22 E=ca;DZO``ZS[zZ]X1HUj3
+l12
+L11
+VUhW[F=Tzz`c?TaUTo>X1Y0
+!s100 zMKhQN8D3[Qn?blgVQO0P3
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!i10b 1
+Emultiplexer14_tb
+Z12 w1524799559
+Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+R3
+Z14 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/multiplexer14/multiplexer14_tb.vhd
+Z15 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/multiplexer14/multiplexer14_tb.vhd
+l0
+L5
+V2=cR5chghZjDY6z;_ihFV0
+!s100 7C=<D:a02mY=49QT]A6Sm1
+R6
+32
+!i10b 1
+Z16 !s108 1524799570.619000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/multiplexer14/multiplexer14_tb.vhd|
+Z18 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/multiplexer14/multiplexer14_tb.vhd|
+R10
+R11
+Amultiplexer14_arch
+R13
+R1
+R2
+Z19 DEx4 work 16 multiplexer14_tb 0 22 2=cR5chghZjDY6z;_ihFV0
+l21
+L7
+VA5ij8n3:gDSIFb;hbE1EV0
+!s100 mCMInF]:j3A3L13BSeZ[L1
+R6
+32
+!i10b 1
+R16
+R17
+R18
+R10
+R11

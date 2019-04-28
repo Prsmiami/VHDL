@@ -1,0 +1,44 @@
+# Compile of Stack_Controller.vhd was successful.
+# Compile of stack_controller_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+# Compile of Stack_Controller.vhd was successful.
+# Compile of stack_controller_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+# Compile of Stack_Controller.vhd was successful.
+# Compile of stack_controller_tb.vhd failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors. 
+# Compile of Stack_Controller.vhd was successful.
+# Compile of stack_controller_tb.vhd failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors. 
+# Compile of Stack_Controller.vhd was successful.
+# Compile of stack_controller_tb.vhd failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors. 
+# Compile of Stack_Controller.vhd was successful.
+# Compile of stack_controller_tb.vhd failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors. 
+# Compile of Stack_Controller.vhd was successful.
+# Compile of stack_controller_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+# Load canceled
+vsim -gui work.stack_controller_tb
+# vsim -gui work.stack_controller_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.stack_controller_tb(stack_controller_arch)
+# Loading work.stack_controller(behav)
+add wave -position insertpoint  \
+sim:/stack_controller_tb/underflow \
+sim:/stack_controller_tb/rs \
+sim:/stack_controller_tb/reset \
+sim:/stack_controller_tb/push \
+sim:/stack_controller_tb/pop \
+sim:/stack_controller_tb/pmd \
+sim:/stack_controller_tb/overflow \
+sim:/stack_controller_tb/cond \
+sim:/stack_controller_tb/clk \
+sim:/stack_controller_tb/ce \
+sim:/stack_controller_tb/add_sel
+run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/stack_controller/wave.do

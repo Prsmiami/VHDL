@@ -1,0 +1,83 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\incremental
+Eloop_counter
+Z0 w1398438652
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\loop_counter
+Z7 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_counter/loop_counter.vhd
+Z8 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_counter/loop_counter.vhd
+l0
+L7
+V75L_URN2nD6^Wg1E;O9C]1
+Z9 OV;C;10.1d;51
+32
+Z10 !s108 1524795371.809000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_counter/loop_counter.vhd|
+Z12 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_counter/loop_counter.vhd|
+Z13 o-work work -2002 -explicit -O0
+Z14 tExplicit 1
+!s100 5Y7A2RahHU1EQP>a`c^;]1
+!i10b 1
+Abehav
+R1
+R2
+R3
+R4
+R5
+DEx4 work 12 loop_counter 0 22 75L_URN2nD6^Wg1E;O9C]1
+l19
+L16
+VeOT_W_lPdJl<VS_IieTKn2
+!s100 =Qb:7A>6k_?4C6e4;1g8[3
+R9
+32
+R10
+R11
+R12
+R13
+R14
+!i10b 1
+Eloop_counter_tb
+Z15 w1524795368
+R3
+R4
+R5
+R6
+Z16 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_counter/loop_counter_tb.vhd
+Z17 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_counter/loop_counter_tb.vhd
+l0
+L5
+V@d<g4XbeN1O;K_SLOM>I80
+!s100 M7fYZCe;I0ik4g4a9<Y072
+R9
+32
+!i10b 1
+Z18 !s108 1524795371.934000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_counter/loop_counter_tb.vhd|
+Z20 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/loop_counter/loop_counter_tb.vhd|
+R13
+R14
+Aloop_counter_arch
+R3
+R4
+R5
+Z21 DEx4 work 15 loop_counter_tb 0 22 @d<g4XbeN1O;K_SLOM>I80
+l25
+L8
+VfJSXnP6W^RO;GU<d9SI]D3
+!s100 TbU]8j5ejzOESf8gEn@8<0
+R9
+32
+!i10b 1
+R18
+R19
+R20
+R13
+R14

@@ -1,0 +1,73 @@
+LIBRARY ieee;
+
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY loop_stack_tb  IS 
+END;
+ 
+ARCHITECTURE loop_stack_tb_arch   OF loop_stack_tb   IS
+  SIGNAL ENDSIM : boolean := false;
+  SIGNAL overflow :  STD_LOGIC; 
+  SIGNAL push :  STD_LOGIC; 
+  SIGNAL data_in :  std_logic_vector (17 downto 0); 
+  SIGNAL data_out :  std_logic_vector (17 downto 0); 
+  SIGNAL underflow :  STD_LOGIC; 
+  SIGNAL clk :  STD_LOGIC := '1'; 
+  SIGNAL reset :  STD_LOGIC; 
+  SIGNAL pop :  STD_LOGIC; 
+  COMPONENT Loop_Stack  
+    PORT ( 
+      overflow : out STD_LOGIC; 
+      push : in STD_LOGIC; 
+      data_in : in std_logic_vector (17 downto 0); 
+      data_out : out std_logic_vector (17 downto 0); 
+      underflow : out STD_LOGIC; 
+      clk : in STD_LOGIC; 
+      reset : in STD_LOGIC; 
+      pop : in STD_LOGIC 
+    ); 
+  END COMPONENT; 
+BEGIN
+  DUT : Loop_Stack  
+    PORT MAP ( 
+      overflow => overflow,
+      push => push,
+      data_in => data_in ,
+      data_out => data_out,
+      underflow => underflow,
+      clk => clk,
+      reset => reset,
+      pop => pop
+    ); 
+
+Process Begin
+  push <= '0';
+  pop <= '0';
+  reset <= '1';
+  data_in <= (OTHERS => '0');
+  wait for 20 ns;
+  reset <= '0';
+  for i in natural range 0 to 50 loop
+    pop <= '0';
+    data_in <= std_logic_vector(to_unsigned(i,18));
+    push <= '1';
+    wait for 20 ns;
+    push <= '0';
+    pop <= '1';
+    wait for 20 ns;
+  end loop;
+  ENDSIM <= true;
+  wait;
+End Process;
+
+Process Begin
+  if ENDSIM = false then
+    clk <= not clk;
+    wait for 10 ns;
+  else
+    wait;
+  end if;
+End Process;
+
+END loop_stack_tb_arch;

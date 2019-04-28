@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\multiplexer14
+Enext_address_mux
+Z0 w1397216034
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\next_address_mux
+Z4 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/next_address_mux/next_address_Mux.vhd
+Z5 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/next_address_mux/next_address_Mux.vhd
+l0
+L4
+VI]=1mS91X4EaW`AYBhmj`3
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1524799940.552000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/next_address_mux/next_address_Mux.vhd|
+Z9 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/next_address_mux/next_address_Mux.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 loPZ^mKIGV4Fec7g?PZLl0
+!i10b 1
+Abehav
+R1
+R2
+DEx4 work 16 next_address_mux 0 22 I]=1mS91X4EaW`AYBhmj`3
+l13
+L12
+VJhEWAZPF<PAQCBL3zM:AE0
+!s100 f]Dz2`ES1H@>I8RJAJ5jP2
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!i10b 1
+Enext_address_mux_tb
+Z12 w1524799933
+Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+R3
+Z14 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/next_address_mux/next_address_mux_tb.vhd
+Z15 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/next_address_mux/next_address_mux_tb.vhd
+l0
+L5
+VB=C]O:n]85SOL4h0kZ0kE3
+!s100 ]E8R_`Q9@0aT^H@TRH_ZX1
+R6
+32
+!i10b 1
+Z16 !s108 1524799940.696000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/next_address_mux/next_address_mux_tb.vhd|
+Z18 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/next_address_mux/next_address_mux_tb.vhd|
+R10
+R11
+Anext_address_mux_arch
+R13
+R1
+R2
+Z19 DEx4 work 19 next_address_mux_tb 0 22 B=C]O:n]85SOL4h0kZ0kE3
+l24
+L7
+Z20 Vo[iKmVQEdmS03PLBZfzcL0
+Z21 !s100 FD9]A6B3e8nZ]D8Rcz<ka3
+R6
+32
+!i10b 1
+R16
+R17
+R18
+R10
+R11

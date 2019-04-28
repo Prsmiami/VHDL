@@ -1,0 +1,45 @@
+C:/Users/fall15/Desktop/REG.vhd {1 {vcom -work work -2002 -explicit C:/Users/fall15/Desktop/REG.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg_16
+-- Compiling architecture bhv_reg_16 of reg_16
+
+} {} {}} C:/Users/fall15/Desktop/ALU.vhd {1 {vcom -work work -2002 -explicit C:/Users/fall15/Desktop/ALU.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ALU_16
+-- Compiling architecture bhv_ALU_16 of ALU_16
+
+} {} {}} C:/Users/fall15/Desktop/tsb.vhd {1 {vcom -work work -2002 -explicit C:/Users/fall15/Desktop/tsb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TSB_16
+-- Compiling architecture bhv_TSB_16 of TSB_16
+
+} {} {}} C:/Users/fall15/Desktop/mux21.vhd {1 {vcom -work work -2002 -explicit C:/Users/fall15/Desktop/mux21.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX21_16
+-- Compiling architecture bhv_MUX21 of MUX21_16
+
+} {} {}} C:/Users/fall15/Desktop/kernel.vhd {1 {vcom -work work -2002 -explicit C:/Users/fall15/Desktop/kernel.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ALU_kernel
+-- Compiling architecture bhv_kernel of ALU_kernel
+
+} {} {}}

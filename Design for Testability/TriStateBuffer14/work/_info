@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\next_address_mux
+Etristatebuffer14
+Z0 w1395331214
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\Skodra\Documents\Radovi\VDHL\Final_DSP\simulation\modelsim\TriStateBuffer14
+Z4 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/TriStateBuffer14/TriStateBuffer14.vhd
+Z5 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/TriStateBuffer14/TriStateBuffer14.vhd
+l0
+L4
+V<<MzkFR?]^zjDEGfF6mXT1
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1524800337.738000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/TriStateBuffer14/TriStateBuffer14.vhd|
+Z9 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/TriStateBuffer14/TriStateBuffer14.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 nHEa=:IIUJG`P>Ceo=UFF2
+!i10b 1
+Abehav
+R1
+R2
+DEx4 work 16 tristatebuffer14 0 22 <<MzkFR?]^zjDEGfF6mXT1
+l11
+L10
+VS]B84[8fm]jIcJFzf[c?83
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 g>alhbXGEZ_=PFe99]U?V3
+!i10b 1
+Etristatebuffer14_tb
+Z12 w1524800287
+Z13 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+R3
+Z14 8C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/TriStateBuffer14/TriStateBuffer14_tb.vhd
+Z15 FC:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/TriStateBuffer14/TriStateBuffer14_tb.vhd
+l0
+L5
+V;Th<7oJ[DQ_YKY=V[@Zk51
+!s100 n^B3;YN>EmPO[iMJDM>1L0
+R6
+32
+!i10b 1
+Z16 !s108 1524800337.855000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/TriStateBuffer14/TriStateBuffer14_tb.vhd|
+Z18 !s107 C:/Users/Skodra/Documents/Radovi/VDHL/Final_DSP/simulation/modelsim/TriStateBuffer14/TriStateBuffer14_tb.vhd|
+R10
+R11
+Atristatebuffer14_arch
+R13
+R1
+R2
+DEx4 work 19 tristatebuffer14_tb 0 22 ;Th<7oJ[DQ_YKY=V[@Zk51
+l19
+L7
+VebdLmCa5?l>?^VCfeIgID1
+!s100 cB_?jGLiVdOJPOV@XK:Mz3
+R6
+32
+!i10b 1
+R16
+R17
+R18
+R10
+R11
